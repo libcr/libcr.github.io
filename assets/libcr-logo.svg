@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">libcr AI logo</title>
+  <desc id="desc">A transparent libcr logo with a Chrome-inspired red, yellow and green outer ring and a blue AI technology core.</desc>
+  <defs>
+    <radialGradient id="coreBg" cx="42%" cy="35%" r="72%">
+      <stop offset="0" stop-color="#173f7f"/>
+      <stop offset=".55" stop-color="#0a2046"/>
+      <stop offset="1" stop-color="#050c1a"/>
+    </radialGradient>
+    <linearGradient id="blueCore" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8bb7ff"/>
+      <stop offset=".5" stop-color="#4285f4"/>
+      <stop offset="1" stop-color="#195ac7"/>
+    </linearGradient>
+    <filter id="ringGlow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="nodeGlow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Subtle base ring keeps the three segments visually connected. -->
+  <circle cx="256" cy="256" r="178" fill="none" stroke="#0b1423" stroke-width="58" opacity=".92"/>
+
+  <!-- Chrome outer colors: red, yellow, green. -->
+  <g fill="none" stroke-width="56" stroke-linecap="round" filter="url(#ringGlow)">
+    <circle cx="256" cy="256" r="178" stroke="#ea4335" stroke-dasharray="356 762.41" transform="rotate(210 256 256)"/>
+    <circle cx="256" cy="256" r="178" stroke="#fbbc05" stroke-dasharray="356 762.41" transform="rotate(330 256 256)"/>
+    <circle cx="256" cy="256" r="178" stroke="#34a853" stroke-dasharray="356 762.41" transform="rotate(90 256 256)"/>
+  </g>
+
+  <!-- Radial links between the native shell and the AI core. -->
+  <g fill="none" stroke="#91baff" stroke-width="2" opacity=".52">
+    <path d="M104 348L178 307L256 256L382 256"/>
+    <path d="M147 125L201 178L228 207"/>
+    <path d="M360 387L319 327L296 298"/>
+  </g>
+  <g fill="#eaf2ff" filter="url(#nodeGlow)">
+    <circle cx="104" cy="348" r="5"/>
+    <circle cx="147" cy="125" r="5"/>
+    <circle cx="382" cy="256" r="5"/>
+    <circle cx="360" cy="387" r="5"/>
+  </g>
+
+  <!-- Blue AI technology core. -->
+  <circle cx="256" cy="256" r="111" fill="url(#coreBg)" stroke="#4285f4" stroke-width="4"/>
+  <circle cx="256" cy="256" r="93" fill="none" stroke="#82aff9" stroke-opacity=".45" stroke-width="2"/>
+  <circle cx="256" cy="256" r="77" fill="none" stroke="#4285f4" stroke-opacity=".42" stroke-width="2"/>
+
+  <path d="M256 174L327 215V297L256 338L185 297V215Z" fill="#4285f4" fill-opacity=".12" stroke="url(#blueCore)" stroke-width="2.5"/>
+
+  <!-- Circuit pins. -->
+  <g fill="none" stroke="#9fc3ff" stroke-width="3" stroke-linecap="round">
+    <path d="M207 221H180L164 205"/>
+    <path d="M305 221H332L348 205"/>
+    <path d="M207 291H180L164 307"/>
+    <path d="M305 291H332L348 307"/>
+    <path d="M256 187V160"/>
+    <path d="M256 325V352"/>
+  </g>
+  <g fill="#f5f9ff" filter="url(#nodeGlow)">
+    <circle cx="164" cy="205" r="5"/>
+    <circle cx="348" cy="205" r="5"/>
+    <circle cx="164" cy="307" r="5"/>
+    <circle cx="348" cy="307" r="5"/>
+    <circle cx="256" cy="160" r="5"/>
+    <circle cx="256" cy="352" r="5"/>
+  </g>
+
+  <text x="256" y="282" fill="#f7faff" font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif" font-size="76" font-weight="760" text-anchor="middle" letter-spacing="-5">AI</text>
+  <text x="256" y="309" fill="#8fb8fb" font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif" font-size="9" font-weight="700" text-anchor="middle" letter-spacing="3.5">LIBCR CORE</text>
+</svg>
