@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07090c" />
+    <meta name="description" content="libcr 基于 Chromium 与现代 C++ 构建快速、安全、跨平台的原生桌面应用。" />
+    <meta property="og:title" content="libcr — Native software. Chromium powered." />
+    <meta property="og:description" content="面向设备控制、开发者工具、文档工作流与局域网共享的原生桌面软件。" />
+    <meta property="og:type" content="website" />
+    <title>libcr — Chromium-powered native software</title>
+    <link rel="icon" href="assets/apps/crScrcpy.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="libcr 首页"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>libcr</span></a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#projects" data-zh="产品" data-en="Products">产品</a>
+        <a href="#technology" data-zh="技术" data-en="Technology">技术</a>
+        <a href="#community" data-zh="社区" data-en="Community">社区</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-switch" type="button" aria-label="Switch to English"><span class="active">中</span><span>EN</span></button>
+        <a class="github-link" href="https://github.com/libcr" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-grid" aria-hidden="true"></div><div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> C++ × Chromium</p>
+          <h1 data-zh="原生速度，<br><em>Chromium</em> 驱动。" data-en="Native speed.<br><em>Chromium</em> powered.">原生速度，<br /><em>Chromium</em> 驱动。</h1>
+          <p class="hero-intro" data-zh="我们在成熟的 Chromium 平台之上，打造快速、安全、跨平台的原生桌面应用。没有 Electron，没有多余的运行时。" data-en="We build fast, secure, cross-platform desktop applications on Chromium's production-grade platform. No Electron. No extra runtime.">我们在成熟的 Chromium 平台之上，打造快速、安全、跨平台的原生桌面应用。没有 Electron，没有多余的运行时。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"><span data-zh="探索产品" data-en="Explore products">探索产品</span><b aria-hidden="true">↓</b></a>
+            <a class="button button-ghost" href="https://github.com/orgs/libcr/repositories" target="_blank" rel="noreferrer"><span data-zh="查看源代码" data-en="View source">查看源代码</span><b aria-hidden="true">↗</b></a>
+          </div>
+        </div>
+        <div class="engine-visual reveal" aria-hidden="true">
+          <div class="orbit orbit-a"><i></i><i></i></div><div class="orbit orbit-b"><i></i></div><div class="orbit orbit-c"></div>
+          <div class="engine-core"><span>lib</span><strong>cr</strong><small>NATIVE CORE</small></div>
+          <span class="tech-label label-views">VIEWS</span><span class="tech-label label-pdfium">PDFIUM</span><span class="tech-label label-network">NETWORK</span><span class="tech-label label-media">MEDIA</span>
+        </div>
+        <div class="hero-stats reveal">
+          <div><strong>5</strong><span data-zh="原生应用" data-en="Native apps">原生应用</span></div>
+          <div><strong>C++</strong><span data-zh="核心语言" data-en="Core language">核心语言</span></div>
+          <div><strong>0</strong><span data-zh="Electron 依赖" data-en="Electron dependencies">Electron 依赖</span></div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span></span> <b data-zh="我们的产品" data-en="Our products">我们的产品</b></p><h2 data-zh="为真实工作流<br>打造的<em>实用工具</em>。" data-en="Focused tools for<br><em>real workflows</em>.">为真实工作流<br />打造的<em>实用工具</em>。</h2></div>
+          <p data-zh="从 Android 设备控制到 API 调试、PDF 阅读和局域网共享，每一款产品都聚焦于一件事，并把它做到更好。" data-en="From Android control to API diagnostics, PDF reading, and local sharing—each product focuses on one job and does it exceptionally well.">从 Android 设备控制到 API 调试、PDF 阅读和局域网共享，每一款产品都聚焦于一件事，并把它做到更好。</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card product-featured reveal">
+            <div class="product-number">01</div><img src="assets/apps/crScrcpy.svg" alt="crScrcpy 图标" />
+            <div class="product-body"><div class="product-title"><h3>crScrcpy</h3><span data-zh="设备控制" data-en="Device control">设备控制</span></div>
+              <p data-zh="流畅显示与控制 Android 设备。支持 H.264/H.265、低延迟音频、多设备会话、同步控制与无损 MP4 录制。" data-en="Display and control Android devices with H.264/H.265, low-latency audio, multi-device sessions, synchronized input, and direct MP4 recording.">流畅显示与控制 Android 设备。支持 H.264/H.265、低延迟音频、多设备会话、同步控制与无损 MP4 录制。</p>
+              <div class="tags"><span>Android</span><span>Chromium Media</span><span>H.265</span></div>
+              <div class="card-links"><a href="https://github.com/libcr/crScrcpy" target="_blank" rel="noreferrer"><span data-zh="项目主页" data-en="Project">项目主页</span> ↗</a><a href="https://github.com/libcr/crScrcpy/releases" target="_blank" rel="noreferrer"><span data-zh="下载" data-en="Download">下载</span> ↓</a></div>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-number">02</div><img src="assets/apps/crRequest.svg" alt="crRequest 图标" />
+            <div class="product-body"><div class="product-title"><h3>crRequest</h3><span data-zh="开发者工具" data-en="Developer tools">开发者工具</span></div>
+              <p data-zh="集 API 测试、cURL 同步、HTTP/3 诊断、SSH/SFTP 与数据库操作于一体的原生开发者工作台。" data-en="A native developer workspace combining API testing, cURL sync, HTTP/3 diagnostics, SSH/SFTP, and database tools.">集 API 测试、cURL 同步、HTTP/3 诊断、SSH/SFTP 与数据库操作于一体的原生开发者工作台。</p>
+              <div class="tags"><span>HTTP/3</span><span>SSH</span><span>PostgreSQL</span></div>
+              <div class="card-links"><a href="https://github.com/libcr/crRequest" target="_blank" rel="noreferrer"><span data-zh="项目主页" data-en="Project">项目主页</span> ↗</a><a href="https://github.com/libcr/crRequest/releases" target="_blank" rel="noreferrer"><span data-zh="下载" data-en="Download">下载</span> ↓</a></div>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-number">03</div><img src="assets/apps/crpdf-logo.svg" alt="crPDF 图标" />
+            <div class="product-body"><div class="product-title"><h3>crPDF</h3><span data-zh="文档工具" data-en="Documents">文档工具</span></div>
+              <p data-zh="轻量级 PDF 阅读、批注与表单工具，支持 AES-256 文档保护和离线数字签名工作流。" data-en="A lightweight PDF reader and annotation tool with forms, AES-256 document protection, and offline digital signatures.">轻量级 PDF 阅读、批注与表单工具，支持 AES-256 文档保护和离线数字签名工作流。</p>
+              <div class="tags"><span>PDFium</span><span>AcroForm</span><span>AES-256</span></div>
+              <div class="card-links"><a href="https://github.com/libcr/crpdf" target="_blank" rel="noreferrer"><span data-zh="项目主页" data-en="Project">项目主页</span> ↗</a><a href="https://apps.microsoft.com/detail/9nmsj50f8m88?ocid=webpdpshare" target="_blank" rel="noreferrer">Microsoft Store ↗</a></div>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-number">04</div><img src="assets/apps/crMarkdown.png" alt="crMarkdown 图标" />
+            <div class="product-body"><div class="product-title"><h3>crMarkdown</h3><span data-zh="内容工具" data-en="Content">内容工具</span></div>
+              <p data-zh="为大型技术文档设计的快速 Markdown 阅读器，支持流式解析、虚拟化渲染、全文搜索与 KaTeX。" data-en="A fast Markdown reader for large technical documents with streaming, virtualized rendering, full-text search, and KaTeX.">为大型技术文档设计的快速 Markdown 阅读器，支持流式解析、虚拟化渲染、全文搜索与 KaTeX。</p>
+              <div class="tags"><span>GFM</span><span>KaTeX</span><span>WebContents</span></div>
+              <div class="card-links"><a href="https://github.com/libcr/crMarkdown" target="_blank" rel="noreferrer"><span data-zh="项目主页" data-en="Project">项目主页</span> ↗</a><a href="https://apps.microsoft.com/store/detail/9NRV9GT24X6J?cid=DevShareMCLPCS" target="_blank" rel="noreferrer">Microsoft Store ↗</a></div>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-number">05</div><img src="assets/apps/crShare.svg" alt="crShare 图标" />
+            <div class="product-body"><div class="product-title"><h3>crShare</h3><span data-zh="局域网共享" data-en="Local sharing">局域网共享</span></div>
+              <p data-zh="在局域网内分享文件、文本、链接和图片。其他设备打开浏览器即可使用，无需安装客户端。" data-en="Share files, text, links, and images over your local network. Other devices need only a browser—no client install required.">在局域网内分享文件、文本、链接和图片。其他设备打开浏览器即可使用，无需安装客户端。</p>
+              <div class="tags"><span>WebSocket</span><span>16 GiB</span><span>HTTPS</span></div>
+              <div class="card-links"><a href="https://github.com/libcr/crShare" target="_blank" rel="noreferrer"><span data-zh="项目主页" data-en="Project">项目主页</span> ↗</a><a href="https://apps.microsoft.com/store/detail/9MWSSWF3H9LC?cid=DevShareMCLPCS" target="_blank" rel="noreferrer">Microsoft Store ↗</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section technology" id="technology">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span></span> <b data-zh="技术基础" data-en="Foundation">技术基础</b></p><h2 data-zh="站在巨人的<br><em>肩膀之上</em>。" data-en="Built on a<br><em>proven platform</em>.">站在巨人的<br /><em>肩膀之上</em>。</h2></div>
+          <p data-zh="复用经过大规模验证的 Chromium 组件，同时保持原生 C++ 的性能、系统集成能力与架构控制力。" data-en="We reuse Chromium components proven at global scale while retaining native C++ performance, system integration, and architectural control.">复用经过大规模验证的 Chromium 组件，同时保持原生 C++ 的性能、系统集成能力与架构控制力。</p>
+        </div>
+        <div class="tech-layout">
+          <div class="code-panel reveal" aria-label="libcr architecture">
+            <div class="code-top"><span></span><span></span><span></span><b>libcr / architecture</b></div>
+            <pre><code><i>01</i> <span class="c-key">target</span>(<span class="c-string">"native_desktop_app"</span>) {
+<i>02</i>   <span class="c-key">runtime</span> = <span class="c-string">"C++"</span>;
+<i>03</i>   <span class="c-key">interface</span> = chromium.views;
+<i>04</i>   <span class="c-key">services</span> = [
+<i>05</i>     network_service,
+<i>06</i>     media_pipeline,
+<i>07</i>     pdfium,
+<i>08</i>     mojo
+<i>09</i>   ];
+<i>10</i>   <span class="c-comment">// No Electron required.</span>
+<i>11</i> }</code></pre>
+          </div>
+          <div class="advantage-grid">
+            <div class="advantage reveal"><b>01</b><h3 data-zh="原生性能" data-en="Native performance">原生性能</h3><p data-zh="直接作为 Chromium 原生目标构建，无额外桌面运行时。" data-en="Built directly as native Chromium targets with no extra desktop runtime.">直接作为 Chromium 原生目标构建，无额外桌面运行时。</p></div>
+            <div class="advantage reveal"><b>02</b><h3 data-zh="现代协议" data-en="Modern protocols">现代协议</h3><p data-zh="成熟支持 HTTP/1.1、HTTP/2、HTTP/3、QUIC 与 TLS。" data-en="Mature support for HTTP/1.1, HTTP/2, HTTP/3, QUIC, and TLS.">成熟支持 HTTP/1.1、HTTP/2、HTTP/3、QUIC 与 TLS。</p></div>
+            <div class="advantage reveal"><b>03</b><h3 data-zh="安全设计" data-en="Secure by design">安全设计</h3><p data-zh="受限渲染、内容净化和多进程架构共同缩小攻击面。" data-en="Restricted rendering, sanitization, and multiprocess architecture reduce attack surface.">受限渲染、内容净化和多进程架构共同缩小攻击面。</p></div>
+            <div class="advantage reveal"><b>04</b><h3 data-zh="大文件响应" data-en="Responsive at scale">大文件响应</h3><p data-zh="后台处理、流式管线与虚拟化渲染保持界面流畅。" data-en="Background work, streaming pipelines, and virtualization keep interfaces responsive.">后台处理、流式管线与虚拟化渲染保持界面流畅。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="community" id="community">
+        <div class="community-inner reveal">
+          <p class="eyebrow"><span></span> OPEN SOURCE</p>
+          <h2 data-zh="一起打造更好的<br><em>原生桌面软件</em>。" data-en="Let's build better<br><em>native desktop software</em>.">一起打造更好的<br /><em>原生桌面软件</em>。</h2>
+          <p data-zh="浏览源代码，体验最新版本，提交问题，或加入社区交流。" data-en="Explore the source, try the latest releases, report an issue, or join the community.">浏览源代码，体验最新版本，提交问题，或加入社区交流。</p>
+          <div class="community-actions">
+            <a class="button button-light" href="https://github.com/orgs/libcr/repositories" target="_blank" rel="noreferrer"><span data-zh="浏览所有项目" data-en="Explore all projects">浏览所有项目</span> ↗</a>
+            <a class="button button-outline" href="https://t.me/LIBCR_AI" target="_blank" rel="noreferrer">Telegram · @LIBCR_AI</a>
+            <span class="qq">QQ <b>535986731</b></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>libcr</span></a>
+      <p data-zh="使用 C++ 与 Chromium 构建。" data-en="Built with C++ and Chromium.">使用 C++ 与 Chromium 构建。</p><p>© <span id="year">2026</span> libcr</p>
+    </footer>
+  </body>
+</html>

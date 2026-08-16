@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">crShare application icon</title>
+  <desc id="desc">A futuristic rounded-square icon with a Chrome-inspired red, yellow and green gradient border and a blue share symbol.</desc>
+
+  <defs>
+    <!-- Chrome-inspired border gradients -->
+    <linearGradient id="chromeRedYellow" x1="32" y1="18" x2="228" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A50E0E"/>
+      <stop offset="0.28" stop-color="#EA4335"/>
+      <stop offset="0.72" stop-color="#FBBC04"/>
+      <stop offset="1" stop-color="#FDE293"/>
+    </linearGradient>
+    <linearGradient id="chromeYellowGreen" x1="230" y1="62" x2="176" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDE293"/>
+      <stop offset="0.22" stop-color="#FBBC04"/>
+      <stop offset="0.68" stop-color="#34A853"/>
+      <stop offset="1" stop-color="#188038"/>
+    </linearGradient>
+    <linearGradient id="chromeGreenRed" x1="176" y1="236" x2="26" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#188038"/>
+      <stop offset="0.34" stop-color="#34A853"/>
+      <stop offset="0.76" stop-color="#EA4335"/>
+      <stop offset="1" stop-color="#A50E0E"/>
+    </linearGradient>
+
+    <!-- Deep-blue center and blue R -->
+    <radialGradient id="panel" cx="50%" cy="40%" r="72%">
+      <stop offset="0" stop-color="#163B70"/>
+      <stop offset="0.5" stop-color="#0B2143"/>
+      <stop offset="1" stop-color="#061426"/>
+    </radialGradient>
+    <linearGradient id="blueR" x1="82" y1="72" x2="174" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#AECBFA"/>
+      <stop offset="0.3" stop-color="#6EA8FE"/>
+      <stop offset="0.68" stop-color="#4285F4"/>
+      <stop offset="1" stop-color="#174EA6"/>
+    </linearGradient>
+    <linearGradient id="blueEdge" x1="93" y1="84" x2="165" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8F0FE" stop-opacity="0.9"/>
+      <stop offset="0.55" stop-color="#8AB4F8" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#4285F4" stop-opacity="0"/>
+    </linearGradient>
+
+  </defs>
+
+  <!-- Inner body -->
+  <path d="M56 22 H200 Q234 22 234 56 V200 Q234 234 200 234 H56 Q22 234 22 200 V56 Q22 22 56 22 Z"
+    fill="url(#panel)"/>
+
+  <!-- Exact 8 px Chrome three-color border, split into renderer-safe continuous arcs -->
+  <g fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M56 18 H200 Q238 18 238 56 V128" stroke="url(#chromeRedYellow)"/>
+    <path d="M238 128 V200 Q238 238 200 238 H56 Q18 238 18 200 V128" stroke="url(#chromeYellowGreen)"/>
+    <path d="M18 128 V56 Q18 18 56 18" stroke="url(#chromeGreenRed)"/>
+  </g>
+
+  <!-- Restrained circuit details for a technical feel -->
+  <g fill="none" stroke="#8AB4F8" stroke-width="2" stroke-linecap="round" opacity="0.28">
+    <path d="M43 90 H64 L76 102"/>
+    <path d="M42 166 H64 L76 154"/>
+    <path d="M180 80 H198 L211 67"/>
+    <path d="M180 176 H198 L211 189"/>
+  </g>
+  <g fill="#8AB4F8" opacity="0.7">
+    <circle cx="43" cy="90" r="3"/>
+    <circle cx="42" cy="166" r="3"/>
+    <circle cx="211" cy="67" r="3"/>
+    <circle cx="211" cy="189" r="3"/>
+  </g>
+
+  <!-- Blue share symbol with three connected nodes -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Connection glow -->
+    <path d="M101 118 L147 92 M101 138 L147 164"
+      fill="none" stroke="#0B57D0" stroke-width="20" opacity="0.25"/>
+
+    <!-- Main connections -->
+    <path d="M101 118 L147 92 M101 138 L147 164"
+      fill="none" stroke="url(#blueR)" stroke-width="12"/>
+    <path d="M105 116 L147 93 M105 140 L147 163"
+      fill="none" stroke="#AECBFA" stroke-width="3" opacity="0.58"/>
+
+    <!-- Left source node -->
+    <circle cx="88" cy="128" r="27" fill="#0B57D0" opacity="0.28"/>
+    <circle cx="88" cy="128" r="21"
+      fill="url(#blueR)" stroke="#8AB4F8" stroke-width="3"/>
+
+    <!-- Upper destination node -->
+    <circle cx="166" cy="82" r="27" fill="#0B57D0" opacity="0.28"/>
+    <circle cx="166" cy="82" r="21"
+      fill="url(#blueR)" stroke="#8AB4F8" stroke-width="3"/>
+
+    <!-- Lower destination node -->
+    <circle cx="166" cy="174" r="27" fill="#0B57D0" opacity="0.28"/>
+    <circle cx="166" cy="174" r="21"
+      fill="url(#blueR)" stroke="#8AB4F8" stroke-width="3"/>
+
+    <!-- Glass-like highlights -->
+    <g fill="#E8F0FE" opacity="0.72">
+      <circle cx="81" cy="121" r="5"/>
+      <circle cx="159" cy="75" r="5"/>
+      <circle cx="159" cy="167" r="5"/>
+    </g>
+  </g>
+</svg>

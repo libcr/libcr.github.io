@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
+  <title id="title">libcr — Beyond Qt. Faster than Electron.</title>
+  <desc id="desc">A dark, futuristic poster for libcr featuring Chrome-inspired red, yellow, green and blue light trails.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07090d"/>
+      <stop offset="0.52" stop-color="#0b1018"/>
+      <stop offset="1" stop-color="#05070a"/>
+    </linearGradient>
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#4285f4" stop-opacity=".42"/>
+      <stop offset=".46" stop-color="#4285f4" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#4285f4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chromeLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ea4335"/>
+      <stop offset=".34" stop-color="#fbbc05"/>
+      <stop offset=".67" stop-color="#34a853"/>
+      <stop offset="1" stop-color="#4285f4"/>
+    </linearGradient>
+    <linearGradient id="chromeText" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ea4335"/>
+      <stop offset=".46" stop-color="#fbbc05"/>
+      <stop offset="1" stop-color="#34a853"/>
+    </linearGradient>
+    <linearGradient id="redYellow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ea4335"/>
+      <stop offset="1" stop-color="#fbbc05"/>
+    </linearGradient>
+    <linearGradient id="yellowGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbc05"/>
+      <stop offset="1" stop-color="#34a853"/>
+    </linearGradient>
+    <linearGradient id="greenBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34a853"/>
+      <stop offset="1" stop-color="#4285f4"/>
+    </linearGradient>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="lineGlow" x="-30%" y="-100%" width="160%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#fff" stroke-opacity=".028" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="1000" fill="url(#bg)"/>
+  <rect width="1200" height="1000" fill="url(#grid)"/>
+  <ellipse cx="810" cy="430" rx="470" ry="470" fill="url(#blueGlow)"/>
+
+  <!-- Technical header -->
+  <g font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif">
+    <text x="1108" y="104" fill="#8993a4" font-size="14" font-weight="600" text-anchor="end" letter-spacing="3">NATIVE UI · V8 · CHROMIUM</text>
+    <line x1="92" y1="138" x2="1108" y2="138" stroke="#fff" stroke-opacity=".09"/>
+  </g>
+
+  <!-- Chrome-inspired orbital C -->
+  <g>
+    <circle cx="810" cy="415" r="245" fill="none" stroke="#fff" stroke-opacity=".04" stroke-width="66"/>
+    <path d="M620 260A245 245 0 0 1 930 215" fill="none" stroke="#ea4335" stroke-width="34" stroke-linecap="round" filter="url(#softGlow)"/>
+    <path d="M930 215A245 245 0 0 1 1050 410" fill="none" stroke="#fbbc05" stroke-width="34" stroke-linecap="round" filter="url(#softGlow)"/>
+    <path d="M1050 410A245 245 0 0 1 935 625" fill="none" stroke="#34a853" stroke-width="34" stroke-linecap="round" filter="url(#softGlow)"/>
+    <path d="M935 625A245 245 0 0 1 620 575" fill="none" stroke="#4285f4" stroke-width="34" stroke-linecap="round" filter="url(#softGlow)"/>
+
+    <!-- AI compute core -->
+    <circle cx="810" cy="415" r="118" fill="#07101f" stroke="#4285f4" stroke-opacity=".9" stroke-width="3"/>
+    <circle cx="810" cy="415" r="96" fill="#0b1d3d" stroke="#75a7fa" stroke-opacity=".45" stroke-width="2" filter="url(#softGlow)"/>
+    <path d="M810 332L882 373V457L810 498L738 457V373Z" fill="#4285f4" fill-opacity=".15" stroke="#73a6fa" stroke-width="2"/>
+    <path d="M762 379H735L719 363M858 379H885L901 363M762 451H735L719 467M858 451H885L901 467M810 344V321M810 486V509" fill="none" stroke="#8bb5fb" stroke-width="3" stroke-linecap="round"/>
+    <g fill="#dbe9ff" filter="url(#lineGlow)">
+      <circle cx="719" cy="363" r="5"/><circle cx="901" cy="363" r="5"/>
+      <circle cx="719" cy="467" r="5"/><circle cx="901" cy="467" r="5"/>
+      <circle cx="810" cy="321" r="5"/><circle cx="810" cy="509" r="5"/>
+    </g>
+    <text x="810" y="445" fill="#f4f8ff" font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif" font-size="78" font-weight="780" text-anchor="middle" letter-spacing="-5">AI</text>
+    <text x="810" y="471" fill="#8fb8fb" font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="4">INTELLIGENCE CORE</text>
+
+    <path d="M620 575L810 415L1050 410" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="2"/>
+    <circle cx="620" cy="260" r="6" fill="#fff"/>
+    <circle cx="1050" cy="410" r="6" fill="#fff"/>
+    <circle cx="620" cy="575" r="6" fill="#fff"/>
+  </g>
+
+  <!-- Main message -->
+  <g font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif">
+    <text x="92" y="607" fill="url(#chromeText)" font-size="116" font-weight="760" letter-spacing="-5">libcr</text>
+    <circle cx="351" cy="568" r="8" fill="#4285f4"/>
+    <text x="92" y="715" fill="#f5f7fa" font-size="104" font-weight="760" letter-spacing="-5">Beyond Qt</text>
+    <text x="92" y="825" fill="#f5f7fa" font-size="104" font-weight="760" letter-spacing="-5">Faster than</text>
+    <text x="92" y="935" fill="#f5f7fa" font-size="104" font-weight="760" letter-spacing="-5">Electron</text>
+  </g>
+</svg>
