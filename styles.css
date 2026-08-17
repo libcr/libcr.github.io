@@ -74,7 +74,7 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 .compare-statement[hidden],.compare-points[hidden] { display:none; }
 .compare-architecture { margin:0; border-top:1px solid #30353e; border-left:1px solid #30353e; }
 .architecture-row { display:grid; grid-template-columns:.55fr 1fr 1fr 1fr; }.architecture-row > * { min-width:0; padding:17px 20px; border-right:1px solid #30353e; border-bottom:1px solid #30353e; }
-.architecture-row span { color:#737a86; font:500 12px var(--mono); letter-spacing:.08em; text-transform:uppercase; }.architecture-row b { color:#9ca3ae; font-size:15px; line-height:1.55; font-weight:500; transition:color .18s ease,background-color .18s ease; }
+.architecture-row span { color:#737a86; font:500 14px var(--mono); letter-spacing:.08em; text-transform:uppercase; }.architecture-row b { color:#9ca3ae; font-size:14px; line-height:1.55; font-weight:500; transition:color .18s ease,background-color .18s ease; }
 .architecture-row b:first-of-type { color:white; background:rgba(66,133,244,.07); }.architecture-head > * { color:white; background:#151922; font:600 13px var(--mono); letter-spacing:.08em; text-transform:uppercase; }.architecture-head b:first-of-type { color:var(--chrome-blue-light); background:#1a2130; }
 .architecture-row > span,.architecture-head > span { color:#b69cff; background:rgba(182,156,255,.065); }
 .compare-architecture:has(.architecture-row > b:nth-child(3):hover) .architecture-row > b:nth-child(3),
