@@ -20,6 +20,7 @@
       <nav class="nav" aria-label="主导航">
         <a href="#projects" data-zh="产品" data-en="Products">产品</a>
         <a href="#technology" data-zh="技术" data-en="Technology">技术</a>
+        <a href="#compare" data-zh="对比" data-en="Compare">对比</a>
         <a href="#groups" data-zh="加入群组" data-en="Join groups">加入群组</a>
       </nav>
       <div class="header-actions">
@@ -118,6 +119,79 @@
             <div class="advantage reveal"><b>02</b><h3 data-zh="现代协议" data-en="Modern protocols">现代协议</h3><p data-zh="成熟支持 HTTP/1.1、HTTP/2、HTTP/3、QUIC 与 TLS。" data-en="Mature support for HTTP/1.1, HTTP/2, HTTP/3, QUIC, and TLS.">成熟支持 HTTP/1.1、HTTP/2、HTTP/3、QUIC 与 TLS。</p></div>
             <div class="advantage reveal"><b>03</b><h3 data-zh="安全设计" data-en="Secure by design">安全设计</h3><p data-zh="受限渲染、内容净化和多进程架构共同缩小攻击面。" data-en="Restricted rendering, sanitization, and multiprocess architecture reduce attack surface.">受限渲染、内容净化和多进程架构共同缩小攻击面。</p></div>
             <div class="advantage reveal"><b>04</b><h3 data-zh="大文件响应" data-en="Responsive at scale">大文件响应</h3><p data-zh="后台处理、流式管线与虚拟化渲染保持界面流畅。" data-en="Background work, streaming pipelines, and virtualization keep interfaces responsive.">后台处理、流式管线与虚拟化渲染保持界面流畅。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compare" id="compare">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span></span> <b data-zh="架构对比" data-en="Architecture comparison">架构对比</b></p><h2 data-zh="为什么选择<br><em>libcr</em>" data-en="Why choose<br><em>libcr</em>">为什么选择<br /><em>libcr</em></h2></div>
+          <p data-zh="libcr 建立在稳定且久经实战检验的 Chromium 代码之上，将多年持续打磨的性能工程能力直接带入原生桌面应用，同时避免叠加额外运行时。" data-en="Built on Chromium's stable, battle-tested codebase, libcr brings years of performance engineering directly to native desktop applications—without adding another runtime layer.">libcr 建立在稳定且久经实战检验的 Chromium 代码之上，将多年持续打磨的性能工程能力直接带入原生桌面应用，同时避免叠加额外运行时。</p>
+        </div>
+
+        <div class="compare-shell reveal">
+          <div id="panel-qt" class="compare-panel" aria-label="libcr vs Qt 6">
+            <div class="compare-statement" hidden>
+              <p class="compare-kicker">libcr / Qt 6</p>
+              <h3 data-zh="Qt 是跨平台 GUI 框架。<br>libcr 是<em>浏览器级多进程应用平台</em>。" data-en="Qt is a cross-platform GUI framework.<br>libcr is a <em>browser-grade, multi-process application platform</em>.">Qt 是跨平台 GUI 框架。<br />libcr 是<em>浏览器级多进程应用平台</em>。</h3>
+              <p data-zh="更适合网络密集、媒体丰富、JavaScript 驱动、GPU 加速与安全敏感的软件。" data-en="Built for networked, media-rich, JavaScript-driven, GPU-accelerated, and security-sensitive software.">更适合网络密集、媒体丰富、JavaScript 驱动、GPU 加速与安全敏感的软件。</p>
+            </div>
+            <div class="compare-architecture" aria-label="Qt 6, Electron and libcr architecture comparison">
+              <div class="architecture-row architecture-head"><span data-zh="能力" data-en="Capability">能力</span><b>LIBCR</b><b>QT6</b><b>ELECTRON</b></div>
+              <div class="architecture-row"><span data-zh="定位" data-en="Positioning">定位</span><b data-zh="原生 C++ 应用平台" data-en="Native C++ application platform">原生 C++ 应用平台</b><b data-zh="跨平台 GUI 框架" data-en="Cross-platform GUI framework">跨平台 GUI 框架</b><b data-zh="面向 JavaScript 的桌面运行时" data-en="Desktop runtime for JavaScript apps">面向 JavaScript 的桌面运行时</b></div>
+              <div class="architecture-row"><span data-zh="运行时" data-en="Runtime">运行时</span><b data-zh="按需裁剪的 Chromium 模块" data-en="Tailored Chromium modules">按需裁剪的 Chromium 模块</b><b data-zh="Qt 模块与平台插件" data-en="Qt modules and platform plugins">Qt 模块与平台插件</b><b>Chromium + Node.js + Electron</b></div>
+              <div class="architecture-row"><span>UI</span><b>Chromium Views / C++</b><b>Qt Widgets / Qt Quick</b><b>HTML / CSS / JavaScript</b></div>
+              <div class="architecture-row"><span data-zh="接口" data-en="APIs">接口</span><b data-zh="原生 C++ + 可选 V8" data-en="Native C++ + optional V8">原生 C++ + 可选 V8</b><b data-zh="Qt C++ / QML API" data-en="Qt C++ / QML APIs">Qt C++ / QML API</b><b data-zh="JavaScript 优先" data-en="JavaScript-first">JavaScript 优先</b></div>
+              <div class="architecture-row"><span data-zh="进程架构" data-en="Process model">进程架构</span><b data-zh="自定义 Mojo 多进程与沙箱" data-en="Custom Mojo multi-process + sandbox">自定义 Mojo 多进程与沙箱</b><b data-zh="以应用进程为中心" data-en="Application-process centered">以应用进程为中心</b><b data-zh="预定义主进程 / 渲染进程" data-en="Preset main / renderer model">预定义主进程 / 渲染进程</b></div>
+              <div class="architecture-row"><span data-zh="图形与 GPU" data-en="Graphics and GPU">图形与 GPU</span><b>Skia / Viz / Dawn / ANGLE</b><b>Qt Quick / RHI</b><b data-zh="通过 Electron 抽象使用 Chromium" data-en="Chromium through Electron abstractions">通过 Electron 抽象使用 Chromium</b></div>
+              <div class="architecture-row"><span data-zh="Web 能力" data-en="Web capability">Web 能力</span><b data-zh="直接访问 Chromium 内核" data-en="Direct Chromium internals">直接访问 Chromium 内核</b><b data-zh="通过 Qt WebEngine 嵌入" data-en="Embedded via Qt WebEngine">通过 Qt WebEngine 嵌入</b><b data-zh="通过 Electron API 封装" data-en="Wrapped by Electron APIs">通过 Electron API 封装</b></div>
+            </div>
+            <ol class="compare-points" hidden>
+              <li><span>01</span><div><h4 data-zh="浏览器级应用架构" data-en="Browser-grade architecture">浏览器级应用架构</h4><p data-zh="原生 UI、图形、网络、媒体、JavaScript、IPC、安全和诊断融于同一平台。" data-en="Native UI, graphics, networking, media, JavaScript, IPC, security, and diagnostics in one platform.">原生 UI、图形、网络、媒体、JavaScript、IPC、安全和诊断融于同一平台。</p></div></li>
+              <li><span>02</span><div><h4 data-zh="统一渲染管线" data-en="Unified rendering pipeline">统一渲染管线</h4><p data-zh="Views、Skia、cc、Viz 与 GPU 服务协同支持合成、动画、局部重绘和高刷新率。" data-en="Views, Skia, cc, Viz, and the GPU service work together for compositing, animation, partial redraw, and high refresh rates.">Views、Skia、cc、Viz 与 GPU 服务协同支持合成、动画、局部重绘和高刷新率。</p></div></li>
+              <li><span>03</span><div><h4 data-zh="成熟的多进程架构" data-en="Mature multi-process architecture">成熟的多进程架构</h4><p data-zh="Mojo 提供强类型异步 IPC、共享内存、数据管道、句柄传递与故障隔离。" data-en="Mojo provides typed async IPC, shared memory, data pipes, handle transfer, and crash containment.">Mojo 提供强类型异步 IPC、共享内存、数据管道、句柄传递与故障隔离。</p></div></li>
+              <li><span>04</span><div><h4 data-zh="现代 GPU 栈" data-en="Advanced GPU stack">现代 GPU 栈</h4><p data-zh="Skia、Dawn、ANGLE、SharedImage 和 Viz 支持 WebGPU、硬件加速与跨进程纹理共享。" data-en="Skia, Dawn, ANGLE, SharedImage, and Viz enable WebGPU, hardware acceleration, and cross-process texture sharing.">Skia、Dawn、ANGLE、SharedImage 和 Viz 支持 WebGPU、硬件加速与跨进程纹理共享。</p></div></li>
+              <li><span>05</span><div><h4 data-zh="生产级网络能力" data-en="Production networking">生产级网络能力</h4><p data-zh="内建 HTTP/1.1、HTTP/2、HTTP/3、QUIC、TLS、DNS、代理、缓存与网络隔离。" data-en="Built-in HTTP/1.1, HTTP/2, HTTP/3, QUIC, TLS, DNS, proxy, caching, and network isolation.">内建 HTTP/1.1、HTTP/2、HTTP/3、QUIC、TLS、DNS、代理、缓存与网络隔离。</p></div></li>
+              <li><span>06</span><div><h4 data-zh="完整媒体管线" data-en="Complete media pipeline">完整媒体管线</h4><p data-zh="覆盖编解码、音画同步、采集、录制、流媒体、WebRTC 与 GPU 视频处理。" data-en="Demuxing, codecs, A/V sync, capture, recording, streaming, WebRTC, and GPU video processing.">覆盖编解码、音画同步、采集、录制、流媒体、WebRTC 与 GPU 视频处理。</p></div></li>
+              <li><span>07</span><div><h4 data-zh="V8 与完整 Web 平台" data-en="V8 and the full web platform">V8 与完整 Web 平台</h4><p data-zh="直接使用 V8、WebAssembly、Blink、WebContents、Service Workers 与 DevTools。" data-en="Direct access to V8, WebAssembly, Blink, WebContents, Service Workers, and DevTools.">直接使用 V8、WebAssembly、Blink、WebContents、Service Workers 与 DevTools。</p></div></li>
+              <li><span>08</span><div><h4 data-zh="更强安全隔离" data-en="Stronger security isolation">更强安全隔离</h4><p data-zh="渲染器、GPU、网络与工具进程沙箱，结合站点隔离和严格 IPC 边界。" data-en="Sandboxed renderer, GPU, network, and utility processes with site isolation and strict IPC boundaries.">渲染器、GPU、网络与工具进程沙箱，结合站点隔离和严格 IPC 边界。</p></div></li>
+              <li><span>09</span><div><h4 data-zh="高效跨进程资源共享" data-en="Efficient resource sharing">高效跨进程资源共享</h4><p data-zh="SharedImage、Mailbox、SyncToken 与 GPU 内存缓冲区减少大数据和纹理复制。" data-en="SharedImage, Mailbox, SyncToken, and GPU memory buffers minimize copies for large data and textures.">SharedImage、Mailbox、SyncToken 与 GPU 内存缓冲区减少大数据和纹理复制。</p></div></li>
+              <li><span>10</span><div><h4 data-zh="生产级诊断" data-en="Production-grade diagnostics">生产级诊断</h4><p data-zh="Perfetto、网络与媒体日志、帧诊断、内存分析、指标和 Crashpad 一应俱全。" data-en="Perfetto, network and media logs, frame diagnostics, memory tooling, metrics, and Crashpad are built in.">Perfetto、网络与媒体日志、帧诊断、内存分析、指标和 Crashpad 一应俱全。</p></div></li>
+              <li><span>11</span><div><h4 data-zh="广泛硬件兼容" data-en="Broad hardware compatibility">广泛硬件兼容</h4><p data-zh="Chromium、Skia、ANGLE 与 Dawn 持续覆盖主流系统、GPU、驱动、摄像头和编解码器。" data-en="Chromium, Skia, ANGLE, and Dawn are continuously tested across systems, GPUs, drivers, cameras, and codecs.">Chromium、Skia、ANGLE 与 Dawn 持续覆盖主流系统、GPU、驱动、摄像头和编解码器。</p></div></li>
+              <li><span>12</span><div><h4 data-zh="更高能力上限" data-en="A higher capability ceiling">更高能力上限</h4><p data-zh="尤其适合浏览器、媒体播放器、远程桌面、设备控制、AI Agent 与 GPU 密集型应用。" data-en="Ideal for browsers, media players, remote desktop, device control, AI agents, and GPU-intensive software.">尤其适合浏览器、媒体播放器、远程桌面、设备控制、AI Agent 与 GPU 密集型应用。</p></div></li>
+            </ol>
+          </div>
+
+          <div id="panel-electron" class="compare-panel" aria-label="libcr vs Electron" hidden>
+            <div class="compare-statement" hidden>
+              <p class="compare-kicker">libcr / Electron</p>
+              <h3 data-zh="Electron 为 JavaScript 应用封装 Chromium。<br>libcr 将 Chromium 变成<em>原生 C++ 应用平台</em>。" data-en="Electron wraps Chromium for JavaScript apps.<br>libcr turns Chromium into a <em>native C++ application platform</em>.">Electron 为 JavaScript 应用封装 Chromium。<br />libcr 将 Chromium 变成<em>原生 C++ 应用平台</em>。</h3>
+              <p data-zh="比 Electron 更小。原生设计。由 Chromium 驱动。" data-en="Smaller than Electron. Native by design. Powered by Chromium.">比 Electron 更小。原生设计。由 Chromium 驱动。</p>
+            </div>
+            <div class="compare-architecture" aria-label="libcr and Electron architecture">
+              <div class="architecture-row architecture-head"><span data-zh="架构" data-en="Architecture">架构</span><b>Electron</b><b>libcr</b></div>
+              <div class="architecture-row"><span data-zh="运行时" data-en="Runtime">运行时</span><b>Chromium + Node.js + Electron</b><b data-zh="按需裁剪的 Chromium 模块" data-en="Tailored Chromium modules">按需裁剪的 Chromium 模块</b></div>
+              <div class="architecture-row"><span>UI</span><b>HTML / CSS / JavaScript</b><b>Chromium Views / C++</b></div>
+              <div class="architecture-row"><span data-zh="接口" data-en="APIs">接口</span><b data-zh="JavaScript 优先" data-en="JavaScript-first">JavaScript 优先</b><b data-zh="原生 C++ + 可选 V8" data-en="Native C++ + optional V8">原生 C++ + 可选 V8</b></div>
+              <div class="architecture-row"><span data-zh="进程模型" data-en="Process model">进程模型</span><b data-zh="预定义主进程 / 渲染进程" data-en="Preset main / renderer model">预定义主进程 / 渲染进程</b><b data-zh="自定义 Mojo 多进程" data-en="Custom Mojo multi-process">自定义 Mojo 多进程</b></div>
+            </div>
+            <ol class="compare-points" hidden>
+              <li><span>01</span><div><h4 data-zh="更小体积与依赖" data-en="Smaller footprint">更小体积与依赖</h4><p data-zh="省去 Node.js、Electron 兼容层和非必要浏览器资源，只打包应用需要的模块。" data-en="Omit Node.js, Electron compatibility layers, and unnecessary browser resources; package only what the app needs.">省去 Node.js、Electron 兼容层和非必要浏览器资源，只打包应用需要的模块。</p></div></li>
+              <li><span>02</span><div><h4 data-zh="更低运行开销" data-en="Lower runtime overhead">更低运行开销</h4><p data-zh="原生 Views 与 C++ 减少 JavaScript 框架、Web 资源、后台进程和内存层级。" data-en="Native Views and C++ reduce framework layers, web assets, background processes, and memory overhead.">原生 Views 与 C++ 减少 JavaScript 框架、Web 资源、后台进程和内存层级。</p></div></li>
+              <li><span>03</span><div><h4 data-zh="原生 C++ 界面" data-en="Native C++ interfaces">原生 C++ 界面</h4><p data-zh="Chromium Views 无需 HTML、CSS 或前端框架，带来直接事件处理和可预测性能。" data-en="Chromium Views needs no HTML, CSS, or frontend framework, enabling direct event handling and predictable performance.">Chromium Views 无需 HTML、CSS 或前端框架，带来直接事件处理和可预测性能。</p></div></li>
+              <li><span>04</span><div><h4 data-zh="更快启动" data-en="Faster startup">更快启动</h4><p data-zh="无需初始化 Node.js、加载前端框架、解析页面资源或执行庞大的 JavaScript 包。" data-en="No Node.js initialization, frontend framework load, page parsing, or large JavaScript bundle before first paint.">无需初始化 Node.js、加载前端框架、解析页面资源或执行庞大的 JavaScript 包。</p></div></li>
+              <li><span>05</span><div><h4 data-zh="直达 Chromium 内核" data-en="Direct Chromium internals">直达 Chromium 内核</h4><p data-zh="直接集成 base、Views、Skia、Viz、Mojo、net、QUICHE、Media、PDFium、V8、Dawn 与 ANGLE。" data-en="Integrate base, Views, Skia, Viz, Mojo, net, QUICHE, Media, PDFium, V8, Dawn, and ANGLE directly.">直接集成 base、Views、Skia、Viz、Mojo、net、QUICHE、Media、PDFium、V8、Dawn 与 ANGLE。</p></div></li>
+              <li><span>06</span><div><h4 data-zh="不强制 Node.js" data-en="No mandatory Node.js">不强制 Node.js</h4><p data-zh="按需使用 V8 和 JavaScript 扩展能力，不必暴露 Node API 或携带其依赖。" data-en="Use V8 and JavaScript selectively without exposing Node APIs or carrying Node-specific dependencies.">按需使用 V8 和 JavaScript 扩展能力，不必暴露 Node API 或携带其依赖。</p></div></li>
+              <li><span>07</span><div><h4 data-zh="更短通信路径" data-en="More efficient communication">更短通信路径</h4><p data-zh="C++ 直接调用核心模块，减少 JS、Node、预加载脚本与渲染进程之间的序列化和切换。" data-en="Direct C++ calls reduce serialization and switching across JavaScript, Node, preload, and renderer boundaries.">C++ 直接调用核心模块，减少 JS、Node、预加载脚本与渲染进程之间的序列化和切换。</p></div></li>
+              <li><span>08</span><div><h4 data-zh="灵活的多进程架构" data-en="Flexible multi-process architecture">灵活的多进程架构</h4><p data-zh="用 Mojo 按需设计浏览器、GPU、网络、媒体与工具进程，而非受限于固定模型。" data-en="Use Mojo to shape browser, GPU, network, media, and utility processes around the application's needs.">用 Mojo 按需设计浏览器、GPU、网络、媒体与工具进程，而非受限于固定模型。</p></div></li>
+              <li><span>09</span><div><h4 data-zh="可控安全边界" data-en="Controlled security boundaries">可控安全边界</h4><p data-zh="只暴露明确批准的原生接口，以沙箱服务和受限 V8 绑定缩小攻击面。" data-en="Expose only approved native interfaces; sandboxed services and restricted V8 bindings reduce attack surface.">只暴露明确批准的原生接口，以沙箱服务和受限 V8 绑定缩小攻击面。</p></div></li>
+              <li><span>10</span><div><h4 data-zh="深度 GPU 与媒体集成" data-en="Deep GPU and media integration">深度 GPU 与媒体集成</h4><p data-zh="直接使用 Skia、SharedImage、Viz、硬件解码、Chromium Media、Dawn 与 ANGLE。" data-en="Direct use of Skia, SharedImage, Viz, hardware decoders, Chromium Media, Dawn, and ANGLE.">直接使用 Skia、SharedImage、Viz、硬件解码、Chromium Media、Dawn 与 ANGLE。</p></div></li>
+              <li><span>11</span><div><h4 data-zh="摆脱前端依赖树" data-en="No frontend dependency tree">摆脱前端依赖树</h4><p data-zh="原生界面无需 React、Vue、Angular、webpack、Vite 或庞大的 npm 依赖。" data-en="Native UI needs no React, Vue, Angular, webpack, Vite, or large npm dependency trees.">原生界面无需 React、Vue、Angular、webpack、Vite 或庞大的 npm 依赖。</p></div></li>
+              <li><span>12</span><div><h4 data-zh="可预测的原生性能" data-en="Predictable native performance">可预测的原生性能</h4><p data-zh="UI、网络、媒体与文件处理关键路径留在 C++，JavaScript 只在合适之处使用。" data-en="Keep critical UI, networking, media, and file paths in C++; use JavaScript only where it fits.">UI、网络、媒体与文件处理关键路径留在 C++，JavaScript 只在合适之处使用。</p></div></li>
+              <li><span>13</span><div><h4 data-zh="面向原生桌面负载" data-en="Built for desktop workloads">面向原生桌面负载</h4><p data-zh="适合高吞吐文件、设备管理、硬件视频、低延迟输入、系统集成和后台任务。" data-en="Suited to high-throughput files, device fleets, hardware video, low-latency input, system integration, and background work.">适合高吞吐文件、设备管理、硬件视频、低延迟输入、系统集成和后台任务。</p></div></li>
+              <li><span>14</span><div><h4 data-zh="构建时完全可控" data-en="Build-time control">构建时完全可控</h4><p data-zh="从 Chromium 源码选择或移除功能、编解码器、服务、资源与平台组件。" data-en="Select or remove features, codecs, services, resources, and platform components at build time.">从 Chromium 源码选择或移除功能、编解码器、服务、资源与平台组件。</p></div></li>
+              <li><span>15</span><div><h4 data-zh="更高性能上限" data-en="A higher native ceiling">更高性能上限</h4><p data-zh="以原生性能、架构控制、精简依赖和 Chromium 底层能力为优先。" data-en="Prioritizes native performance, architectural control, lean dependencies, and Chromium's underlying capabilities.">以原生性能、架构控制、精简依赖和 Chromium 底层能力为优先。</p></div></li>
+            </ol>
           </div>
         </div>
       </section>

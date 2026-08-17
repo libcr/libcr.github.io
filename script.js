@@ -1,7 +1,25 @@
 const languageButton = document.querySelector(".lang-switch");
 const translatable = document.querySelectorAll("[data-zh][data-en]");
+const isLocalFile = window.location.protocol === "file:";
+
+// Chromium treats file:// documents as opaque, unique origins. Handle in-page
+// links without asking the browser to perform another file:// URL navigation.
+if (isLocalFile) {
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const target = document.getElementById(link.getAttribute("href").slice(1));
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+        block: "start",
+      });
+    });
+  });
+}
 
 function getStoredLanguage() {
+  if (isLocalFile) return null;
   try {
     const stored = localStorage.getItem("libcr-language");
     return stored === "zh" || stored === "en" ? stored : null;
@@ -37,6 +55,7 @@ function setLanguage(nextLanguage, remember = false) {
     : "libcr builds fast, secure, cross-platform native desktop applications with Chromium and modern C++.";
 
   if (remember) {
+    if (isLocalFile) return;
     try {
       localStorage.setItem("libcr-language", language);
     } catch {
@@ -46,6 +65,7 @@ function setLanguage(nextLanguage, remember = false) {
 }
 
 languageButton.addEventListener("click", () => setLanguage(language === "zh" ? "en" : "zh", true));
+
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) { entry.target.classList.add("is-visible"); revealObserver.unobserve(entry.target); }
