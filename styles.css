@@ -70,7 +70,7 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 .compare::before { content:""; position:absolute; width:720px; height:720px; right:-280px; top:130px; background:radial-gradient(circle,rgba(66,133,244,.16),transparent 68%); pointer-events:none; }
 .compare .section-heading { position:relative; z-index:1; }.compare .section-heading > p { color:#9da2ac; }.compare .section-heading h2 em { color:var(--chrome-blue); }
 .compare-shell { position:relative; z-index:1; border:1px solid #2a2e35; background:#0e1116; }
-.compare-panel { padding:clamp(28px,5vw,72px); }.compare-panel[hidden] { display:none; }
+.compare-panel { padding:clamp(19.6px,3.5vw,50.4px); }.compare-panel[hidden] { display:none; }
 .compare-panel + .compare-panel { border-top:1px solid #2a2e35; }
 .compare-statement[hidden],.compare-points[hidden] { display:none; }
 .compare-architecture { margin:0; border-top:1px solid #30353e; border-left:1px solid #30353e; }
@@ -103,7 +103,7 @@ footer { min-height:110px; background:#07090c; color:white; padding:0 clamp(22px
   .site-header { height:64px; }.nav,.github-link { display:none; }.hero { min-height:auto; padding-top:96px; padding-bottom:80px; display:flex; flex-direction:column; align-items:stretch; }.hero-intro { line-height:1.7; }.desktop-break { display:none; }.hero-poster { position:relative; width:min(100%,344px); right:auto; top:auto; align-self:center; order:-1; opacity:1; margin-bottom:52px; }
   .section { padding-top:85px; padding-bottom:85px; }.product-grid { grid-template-columns:1fr; }.product-featured { grid-column:auto; }.product-card,.product-featured { min-height:420px; grid-template-columns:1fr; gap:20px; }.product-card img,.product-featured img { width:70px; height:70px; }
   .advantage-grid { grid-template-columns:1fr; }.advantage,.advantage:nth-child(odd),.advantage:nth-child(n+3) { padding:28px 0; border-right:0; border-bottom:1px solid #c9c7be; }.advantage h3 { margin-top:14px; }.code-panel { min-height:0; box-shadow:10px 10px 0 #c8c6bd; }.code-panel pre { padding:32px 17px; }
-  .compare-panel { padding:28px 18px; }.compare-architecture { overflow-x:auto; }.architecture-row { min-width:850px; }
+  .compare-panel { padding:19.6px 12.6px; }.compare-architecture { overflow-x:auto; }.architecture-row { min-width:850px; }
   .group-images { grid-template-columns:1fr; }.group-image img { width:min(100%,300px); height:300px; }
   footer { padding-top:35px; padding-bottom:35px; grid-template-columns:1fr; gap:20px; } footer p:nth-child(2),footer p:last-child { text-align:left; }
 }
