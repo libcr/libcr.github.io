@@ -55,8 +55,9 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 .product-featured .product-title span { border-color:#3c4048; color:#a3a8b0; }.product-body > p { max-width:620px; color:var(--muted); line-height:1.72; margin:22px 0; }.product-featured .product-body > p { color:#aeb2bb; }
 .tags { display:flex; gap:7px; flex-wrap:wrap; margin-bottom:30px; }.tags span { background:#e5e4df; padding:7px 10px; font:500 12px var(--mono); }.product-featured .tags span { background:#22262d; color:#c7ccd4; }
 .card-links { margin-top:auto; display:flex; gap:23px; flex-wrap:wrap; }.card-links a { font:400 16px var(--sans); border-bottom:1px solid currentColor; padding-bottom:4px; }
-.card-links .store-link { display:inline-flex; align-items:center; gap:7px; }
+.card-links .store-link,.card-links .download-link { display:inline-flex; align-items:center; gap:7px; }
 .card-links .store-link img { width:16px; height:16px; object-fit:contain; flex:0 0 auto; }
+.card-links .download-link img { width:17px; height:20px; object-fit:contain; flex:0 0 auto; }
 
 .technology { background:#e7e6e0; }.tech-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:50px; align-items:stretch; }
 .code-panel { background:var(--panel); color:#d9dde5; box-shadow:18px 18px 0 #c8c6bd; min-height:490px; }.code-top { height:55px; border-bottom:1px solid #2b2f36; display:flex; align-items:center; padding:0 20px; gap:7px; }
