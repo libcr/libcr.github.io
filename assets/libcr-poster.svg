@@ -88,7 +88,7 @@
   <!-- Main message -->
   <g font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif">
     <text x="92" y="607" fill="url(#chromeText)" font-size="136" font-weight="760" letter-spacing="-5">libcr</text>
-    <circle cx="398" cy="576" r="16" fill="#4285f4"/>
+    <rect x="394" y="565" width="66" height="22" rx="11" fill="#4285f4"/>
     <text x="92" y="715" fill="#f5f7fa" font-size="104" font-weight="760" letter-spacing="-5">Beyond Qt</text>
     <text x="92" y="825" fill="#f5f7fa" font-size="104" font-weight="760" letter-spacing="-5">Faster than</text>
     <text x="92" y="935" fill="#f5f7fa" font-size="104" font-weight="760" letter-spacing="-5">Electron</text>
