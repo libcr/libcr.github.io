@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="208"
+     height="128"
+     viewBox="0 0 208 128">
+
+  <defs>
+    <linearGradient id="chromeGradient"
+                    x1="0" y1="0"
+                    x2="208" y2="128"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA4335"/>
+      <stop offset="0.38" stop-color="#FBBC05"/>
+      <stop offset="0.7" stop-color="#34A853"/>
+      <stop offset="1" stop-color="#EA4335"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Chrome 三色圆角边框 -->
+  <rect x="5"
+        y="5"
+        width="198"
+        height="118"
+        rx="10"
+        fill="none"
+        stroke="url(#chromeGradient)"
+        stroke-width="10"/>
+
+  <!-- 字母 M -->
+  <path fill="#4285F4"
+        d="M26 96V32h18l20 25 20-25h18v64H83V61L64 85 45 61v35z"/>
+
+  <!-- 字母 D -->
+  <path fill="#4285F4"
+        d="M116 32h28c24 0 38 12 38 32s-14 32-38 32h-28zm19 17v30h8c13 0 20-5 20-15s-7-15-20-15z"/>
+</svg>
