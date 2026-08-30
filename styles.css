@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap");
+@font-face { font-family:"Manrope"; src:url("assets/fonts/manrope-latin.woff2") format("woff2"); font-style:normal; font-weight:400 800; font-display:swap; }
+@font-face { font-family:"Google Sans Code"; src:url("assets/fonts/google-sans-code-latin.woff2") format("woff2"); font-style:normal; font-weight:300 800; font-display:swap; }
 
-:root { --ink:#0a0c10; --paper:#f2f1ed; --white:#fff; --muted:#65696f; --line:#d5d4cf; --chrome-blue:#4285f4; --chrome-blue-light:#8ab4f8; --blue:#5b7cff; --panel:#12151a; --mono:"IBM Plex Mono",monospace; --sans:"Manrope","Noto Sans SC",sans-serif; }
+:root { --ink:#0a0c10; --paper:#f2f1ed; --white:#fff; --muted:#65696f; --line:#d5d4cf; --chrome-blue:#4285f4; --chrome-blue-light:#8ab4f8; --blue:#5b7cff; --panel:#12151a; --mono:"Google Sans Code",ui-monospace,"SFMono-Regular",Consolas,"Liberation Mono",monospace; --sans:"Manrope",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",Arial,sans-serif; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); -webkit-font-smoothing:antialiased; }
@@ -44,6 +45,7 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 .section-heading { display:grid; grid-template-columns:1.25fr .75fr; align-items:end; gap:60px; margin-bottom:70px; }
 .section-heading .eyebrow { margin-bottom:22px; font-size:16.5px; }.section-heading h2 { font-size:clamp(45px,5.3vw,78px); }.section-heading h2 em { color:var(--blue); }
 .section-heading > p { color:var(--muted); font-size:16px; line-height:1.8; max-width:520px; margin:0 0 8px; }
+.platform-support { display:inline-flex; align-items:center; gap:9px; margin-top:7px; }.platform-support img { width:20px; height:20px; object-fit:contain; }
 
 .product-grid { display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); }
 .product-card { position:relative; min-height:420px; padding:42px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); display:grid; grid-template-columns:78px 1fr; gap:28px; background:rgba(255,255,255,.22); transition:background .25s,transform .25s; }
