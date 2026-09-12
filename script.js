@@ -36,6 +36,8 @@ function setLanguage(nextLanguage, remember = false) {
     ? "libcr 基于 Chromium 与现代 C++ 构建快速、安全、跨平台的原生桌面应用。"
     : "libcr builds fast, secure, cross-platform native desktop applications with Chromium and modern C++.";
 
+  if ("ResizeObserver" in window) layoutProducts();
+
   if (remember) {
     try {
       localStorage.setItem("libcr-language", language);
@@ -54,4 +56,48 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Pack cards into the shortest column; retain priority order in the document.
+// Without ResizeObserver, the ordinary responsive grid remains usable.
+const productGrid = document.querySelector(".product-grid");
+const productCards = [...productGrid.querySelectorAll(".product-card")];
+const singleColumn = window.matchMedia("(max-width:700px)");
+let masonryFrame;
+
+function layoutProducts() {
+  if (singleColumn.matches) {
+    productGrid.classList.remove("is-masonry");
+    productCards.forEach((card) => {
+      card.style.removeProperty("grid-column");
+      card.style.removeProperty("grid-row");
+    });
+    return;
+  }
+
+  productGrid.classList.add("is-masonry");
+  const columnHeights = [0, 0];
+  const gap = parseFloat(getComputedStyle(productGrid).columnGap) || 24;
+  const heights = productCards.map((card) => card.getBoundingClientRect().height);
+  productCards.forEach((card, index) => {
+    const column = columnHeights[0] <= columnHeights[1] ? 0 : 1;
+    const span = Math.ceil(heights[index]);
+    card.style.gridColumn = String(column + 1);
+    card.style.gridRow = `${columnHeights[column] + 1} / span ${span}`;
+    columnHeights[column] += span + gap;
+  });
+}
+
+function scheduleProductLayout() {
+  cancelAnimationFrame(masonryFrame);
+  masonryFrame = requestAnimationFrame(layoutProducts);
+}
+
+if ("ResizeObserver" in window) {
+  const productResizeObserver = new ResizeObserver(scheduleProductLayout);
+  productResizeObserver.observe(productGrid);
+  productCards.forEach((card) => productResizeObserver.observe(card));
+  singleColumn.addEventListener("change", scheduleProductLayout);
+  scheduleProductLayout();
+}
+
 setLanguage(language);
