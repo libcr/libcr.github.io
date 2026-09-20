@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title id="title">Player icon</title>
+<desc id="desc">Three seamless curved regions with rich red, gold and blue gradients surround a white play triangle.</desc>
+<defs>
+<clipPath id="disc"><circle cx="256" cy="256" r="213" /></clipPath>
+<linearGradient id="red" x1="94" y1="105" x2="280" y2="344" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF8970" /><stop offset="0.5" stop-color="#F24B42" /><stop offset="1" stop-color="#C9253C" /></linearGradient>
+<linearGradient id="yellow" x1="322" y1="79" x2="430" y2="389" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE88B" /><stop offset="0.5" stop-color="#FFCA28" /><stop offset="1" stop-color="#F49B0B" /></linearGradient>
+<linearGradient id="blue" x1="135" y1="309" x2="339" y2="466" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#85B7FF" /><stop offset="0.5" stop-color="#4285F4" /><stop offset="1" stop-color="#2558C9" /></linearGradient>
+</defs>
+<g clip-path="url(#disc)">
+<circle cx="256" cy="256" r="213" fill="url(#blue)" />
+<path d="M356.000 256.000 C413.000 256.000 386.000 367.000 418.635 418.635 A230 230 0 0 1 33.837 315.528 C94.871 313.083 177.500 391.966 206.000 342.603 L256 256Z" fill="url(#blue)" />
+<path d="M206.000 342.603 C177.500 391.966 94.871 313.083 33.837 315.528 A230 230 0 0 1 315.528 33.837 C287.129 87.917 177.500 120.034 206.000 169.397 L256 256Z" fill="url(#red)" />
+<path d="M206.000 169.397 C177.500 120.034 287.129 87.917 315.528 33.837 A230 230 0 0 1 418.635 418.635 C386.000 367.000 413.000 256.000 356.000 256.000 L256 256Z" fill="url(#yellow)" />
+<g fill="none" stroke="#FFFFFF" stroke-width="11.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M356.000 256.000 L206.000 342.603 L206.000 169.397Z" fill="#FFFFFF" />
+</g>
+</g>
+</svg>
