@@ -122,3 +122,6 @@ footer { min-height:110px; background:#07090c; color:white; padding:0 clamp(22px
   footer { padding-top:35px; padding-bottom:35px; grid-template-columns:1fr; gap:20px; } footer p:nth-child(2),footer p:last-child { text-align:left; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; }.reveal { opacity:1; transform:none; transition:none; } }
+
+.tags .quick-share-tag { display:inline-flex; align-items:center; gap:6px; white-space:nowrap; }
+.quick-share-tag img { display:block; flex-shrink:0; }
