@@ -20,7 +20,9 @@ button,a { -webkit-tap-highlight-color:transparent; }
 .header-actions { display:flex; align-items:center; gap:16px; }
 .lang-switch { padding:0; background:transparent; border:0; color:white; display:flex; gap:5px; font:600 11px var(--mono); cursor:pointer; }
 .lang-switch span { padding:6px 7px; opacity:.45; border:1px solid transparent; border-radius:999px; }.lang-switch .active { opacity:1; border-color:rgba(255,255,255,.5); }
-.github-link { font:500 12px var(--mono); padding:9px 13px; border:1px solid rgba(255,255,255,.34); border-radius:999px; }
+.github-link,.x-link { font:500 12px var(--mono); padding:9px 13px; white-space:nowrap; }
+.x-link { display:inline-flex; align-items:center; justify-content:center; }
+.x-link svg { display:block; width:13.6px; height:13.6px; }
 
 .hero { min-height:900px; height:100svh; max-height:1040px; color:white; background:#07090c; position:relative; overflow:hidden; padding:150px clamp(22px,7vw,120px) 34px; display:grid; grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr); grid-template-rows:1fr; align-items:center; }
 .hero-grid { position:absolute; inset:0; opacity:.19; background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px); background-size:64px 64px; mask-image:linear-gradient(to right,black,transparent 75%); }
