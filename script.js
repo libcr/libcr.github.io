@@ -27,9 +27,7 @@ function setLanguage(nextLanguage, remember = false) {
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
   document.title = language === "zh" ? "libcr — Chromium 驱动的原生软件" : "libcr — Chromium-powered native software";
   translatable.forEach((element) => { element.innerHTML = element.dataset[language]; });
-  const labels = languageButton.querySelectorAll("span");
-  labels[0].classList.toggle("active", language === "zh");
-  labels[1].classList.toggle("active", language === "en");
+  languageButton.textContent = language === "zh" ? "En" : "中";
   languageButton.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切换到中文");
   document.querySelector(".skip-link").textContent = language === "zh" ? "跳到主要内容" : "Skip to main content";
   document.querySelector('meta[name="description"]').content = language === "zh"
