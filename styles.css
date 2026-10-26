@@ -68,6 +68,7 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 .product-featured .product-title span { border-color:#3c4048; color:#a3a8b0; }.product-body > p { max-width:620px; color:var(--muted); line-height:1.72; margin:22px 0; }.product-featured .product-body > p { color:#aeb2bb; }
 .tags { display:flex; gap:7px; flex-wrap:wrap; margin-bottom:30px; }.tags span { background:#e5e4df; padding:7px 10px; font:500 12px var(--mono); }.product-featured .tags span { background:#22262d; color:#c7ccd4; }
 .card-links { margin-top:auto; display:flex; gap:23px; flex-wrap:wrap; }.card-links a { font:400 16px var(--sans); border-bottom:1px solid currentColor; padding-bottom:4px; }
+.download-links { display:contents; }
 .card-links .store-link,.card-links .download-link { display:inline-flex; align-items:center; gap:7px; }
 .card-links .store-link img { width:16px; height:16px; object-fit:contain; flex:0 0 auto; }
 .card-links .download-link img { width:15px; height:17px; object-fit:contain; border-radius:0; flex:0 0 auto; }
@@ -115,6 +116,8 @@ footer { min-height:110px; background:#07090c; color:white; padding:0 clamp(22px
   .section-heading { grid-template-columns:1fr; gap:24px; }.section-heading > p { grid-column:1; }.product-card { padding:26px; }.product-card[data-importance="2"] { flex-direction:column; padding:26px; }.tech-layout { grid-template-columns:1fr; }
 }
 @media (max-width:700px) {
+  .card-links { flex-direction:column; align-items:flex-start; gap:16px; }
+  .download-links { display:flex; flex-wrap:wrap; gap:8px; }
   .site-header { height:64px; }.nav { display:none; }.hero { min-height:auto; padding-top:96px; padding-bottom:80px; display:flex; flex-direction:column; align-items:stretch; }.hero-intro { line-height:1.7; }.desktop-break { display:none; }.hero-poster { position:relative; width:min(100%,344px); right:auto; top:auto; align-self:center; order:-1; opacity:1; margin-bottom:52px; }
   .section { padding-top:85px; padding-bottom:85px; }.product-grid { grid-template-columns:1fr; }.product-card,.product-featured { min-height:0; gap:20px; padding:26px; }.product-header > img { width:64px; height:64px; }.product-card[data-importance="2"] { flex-direction:column; padding:26px; }
   .advantage-grid { grid-template-columns:1fr; }.advantage,.advantage:nth-child(odd),.advantage:nth-child(n+3) { padding:28px 0; border-right:0; border-bottom:1px solid #c9c7be; }.advantage h3 { margin-top:14px; }.code-panel { min-height:0; box-shadow:10px 10px 0 #c8c6bd; }.code-panel pre { padding:32px 17px; }
