@@ -74,6 +74,41 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 .card-links .download-link img { width:15px; height:17px; object-fit:contain; border-radius:0; flex:0 0 auto; }
 .product-featured .download-link img[src="assets/macos.svg"] { filter:brightness(0) invert(1); }
 
+/* Frame the posters' central illustrations without their titles and footers. */
+.product-photos { --card-poster:url("assets/apps/crPhotos-1.9.7-background.svg"); }
+.product-player { --card-poster:url("assets/apps/crPlayer-1.3.6-poster.svg"); }
+.product-files { --card-poster:url("assets/apps/crFiles-1.6.8-poster.svg"); }
+:is(.product-player,.product-files,.product-photos),
+:is(.product-player,.product-files,.product-photos):hover {
+  color:#f0f7ff;
+  background-color:#081724;
+  background-image:linear-gradient(180deg,rgba(5,15,26,.88),rgba(5,15,26,.65) 48%,rgba(5,15,26,.25) 72%,rgba(5,15,26,.9)),var(--card-poster);
+  background-size:100% 100%,auto 350%;
+  background-position:center,center 58%;
+  background-repeat:no-repeat;
+}
+:is(.product-player,.product-files,.product-photos) .product-title span { color:#d0e1ec; border-color:#496173; background:rgba(8,23,36,.65); }
+:is(.product-player,.product-files,.product-photos) .product-body > p { color:#e0eaf3; text-shadow:0 1px 3px #081724; }
+:is(.product-player,.product-files,.product-photos) .tags span { color:#d9edf5; background:rgba(13,35,51,.9); }
+:is(.product-player,.product-files,.product-photos) .product-number { color:#a9c1d2; }
+:is(.product-player,.product-files,.product-photos) .card-links { color:#e0efff; }
+:is(.product-player,.product-files,.product-photos) .download-link img[src="assets/macos.svg"] { filter:brightness(0) invert(1); }
+
+/* Match the background's 350% height and 58% vertical position exactly. */
+.poster-hotspots { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.poster-hotspots svg { position:absolute; height:350%; width:auto; max-width:none; aspect-ratio:1080 / 2400; left:50%; top:-145%; transform:translateX(-50%); overflow:visible; }
+/* Fit the photo illustration to the width, independently of card height. */
+.product-photos,
+.product-photos:hover { background-size:100% 100%,100% auto; }
+.product-photos .poster-hotspots svg { width:100%; height:auto; aspect-ratio:1080 / 780; top:58%; transform:translate(-50%,-58%); }
+.poster-hit-area { pointer-events:all; }
+.poster-highlight { opacity:0; pointer-events:none; transition:opacity .2s; }
+.poster-hotspot:hover .poster-highlight { opacity:1; }
+:is(.product-player,.product-files,.product-photos) .product-body { position:relative; pointer-events:none; }
+/* Only links intercept input; foreground layout boxes must not split the hotspot. */
+:is(.product-player,.product-files,.product-photos) .product-body a { pointer-events:auto; }
+@media (prefers-reduced-motion:reduce) { .poster-highlight { transition:none; } }
+
 .technology { background:#e7e6e0; }.tech-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:50px; align-items:stretch; }
 .code-panel { background:var(--panel); color:#d9dde5; box-shadow:18px 18px 0 #c8c6bd; min-height:490px; }.code-top { height:55px; border-bottom:1px solid #2b2f36; display:flex; align-items:center; padding:0 20px; gap:7px; }
 .code-top span { width:8px; height:8px; border-radius:50%; background:#414650; }.code-top span:first-child { background:var(--chrome-blue); }.code-top b { margin-left:auto; color:#777d87; font:500 10px var(--mono); }

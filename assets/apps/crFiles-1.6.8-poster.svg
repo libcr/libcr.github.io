@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1080" height="2400" viewBox="0 0 1080 2400" role="img" aria-labelledby="poster-title poster-desc">
+  <title id="poster-title">crFiles 1.6.8 released</title>
+  <desc id="poster-desc">A crFiles release poster with the original app icon, a luminous file constellation representing search, previews, archives and QuickShare with an Android icon, and nine libcr family app icons.</desc>
+  <defs>
+    <linearGradient id="background" x2=".7" y2="1">
+      <stop stop-color="#091423"/><stop offset=".55" stop-color="#050c18"/><stop offset="1" stop-color="#080e1b"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#197e9a" stop-opacity=".37"/><stop offset=".48" stop-color="#145773" stop-opacity=".16"/><stop offset="1" stop-color="#10263e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core-glow">
+      <stop stop-color="#2eeac6" stop-opacity=".22"/><stop offset="1" stop-color="#15bdc2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="folder-back" x2=".4" y2="1">
+      <stop stop-color="#164b60"/><stop offset="1" stop-color="#0c2238"/>
+    </linearGradient>
+    <linearGradient id="folder-front" x2=".85" y2="1">
+      <stop stop-color="#226a7a" stop-opacity=".96"/><stop offset=".45" stop-color="#123d52" stop-opacity=".97"/><stop offset="1" stop-color="#0b2038"/>
+    </linearGradient>
+    <linearGradient id="edge" x2="1" y2=".6">
+      <stop stop-color="#b0fff2"/><stop offset=".45" stop-color="#50ded5"/><stop offset="1" stop-color="#4588e2" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="card" x2="1" y2="1">
+      <stop stop-color="#1c394e"/><stop offset="1" stop-color="#0b192c"/>
+    </linearGradient>
+    <linearGradient id="fade-line">
+      <stop stop-color="#65d6dc" stop-opacity="0"/><stop offset=".5" stop-color="#65d6dc" stop-opacity=".6"/><stop offset="1" stop-color="#65d6dc" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#62afc6" stroke-opacity=".045"/>
+    </pattern>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <style>
+      text {font-family:'DejaVu Sans',Arial,sans-serif;fill:#eff8ff}
+      .mono {font-family:'DejaVu Sans Mono',monospace}
+      .label {font-size:18px;letter-spacing:4px;fill:#88a8ba}
+      .caption {font-size:19px;letter-spacing:2px;fill:#9cb6c8}
+      .family {font-size:18px;fill:#9eb1c6;text-anchor:middle}
+      .small {font-size:16px;letter-spacing:2px;fill:#78a4b6}
+    </style>
+  </defs>
+
+  <rect width="1080" height="2400" fill="url(#background)"/>
+  <rect width="1080" height="1955" fill="url(#grid)"/>
+  <ellipse cx="540" cy="440" rx="650" ry="620" fill="url(#halo)"/>
+  <ellipse cx="540" cy="1420" rx="580" ry="510" fill="url(#core-glow)"/>
+  <circle cx="896" cy="1431" r="1.3" fill="#93d9ef" opacity="0.43"/>
+<circle cx="730" cy="716" r="0.8" fill="#93d9ef" opacity="0.28"/>
+<circle cx="637" cy="1129" r="0.8" fill="#93d9ef" opacity="0.10"/>
+<circle cx="198" cy="675" r="0.8" fill="#93d9ef" opacity="0.23"/>
+<circle cx="1010" cy="609" r="1" fill="#93d9ef" opacity="0.16"/>
+<circle cx="768" cy="405" r="1.3" fill="#93d9ef" opacity="0.16"/>
+<circle cx="367" cy="1941" r="0.8" fill="#93d9ef" opacity="0.46"/>
+<circle cx="1001" cy="1908" r="2" fill="#93d9ef" opacity="0.13"/>
+<circle cx="986" cy="916" r="2" fill="#93d9ef" opacity="0.32"/>
+<circle cx="915" cy="1498" r="1" fill="#93d9ef" opacity="0.43"/>
+<circle cx="791" cy="1536" r="1" fill="#93d9ef" opacity="0.46"/>
+<circle cx="302" cy="586" r="0.8" fill="#93d9ef" opacity="0.21"/>
+<circle cx="534" cy="1734" r="2" fill="#93d9ef" opacity="0.47"/>
+<circle cx="975" cy="1913" r="1" fill="#93d9ef" opacity="0.18"/>
+<circle cx="209" cy="1420" r="1" fill="#93d9ef" opacity="0.20"/>
+<circle cx="416" cy="318" r="1.3" fill="#93d9ef" opacity="0.12"/>
+<circle cx="186" cy="357" r="0.8" fill="#93d9ef" opacity="0.27"/>
+<circle cx="422" cy="406" r="1.3" fill="#93d9ef" opacity="0.11"/>
+<circle cx="573" cy="171" r="1" fill="#93d9ef" opacity="0.21"/>
+<circle cx="853" cy="965" r="2" fill="#93d9ef" opacity="0.33"/>
+<circle cx="1034" cy="992" r="2" fill="#93d9ef" opacity="0.32"/>
+<circle cx="539" cy="860" r="1.3" fill="#93d9ef" opacity="0.14"/>
+<circle cx="67" cy="1571" r="1" fill="#93d9ef" opacity="0.37"/>
+<circle cx="227" cy="873" r="1" fill="#93d9ef" opacity="0.34"/>
+<circle cx="300" cy="1524" r="0.8" fill="#93d9ef" opacity="0.45"/>
+<circle cx="69" cy="1721" r="1.3" fill="#93d9ef" opacity="0.10"/>
+<circle cx="770" cy="708" r="0.8" fill="#93d9ef" opacity="0.16"/>
+<circle cx="773" cy="1418" r="2" fill="#93d9ef" opacity="0.35"/>
+<circle cx="429" cy="1546" r="2" fill="#93d9ef" opacity="0.33"/>
+<circle cx="588" cy="1651" r="0.8" fill="#93d9ef" opacity="0.30"/>
+<circle cx="496" cy="1751" r="2" fill="#93d9ef" opacity="0.35"/>
+<circle cx="165" cy="948" r="2" fill="#93d9ef" opacity="0.29"/>
+<circle cx="557" cy="1914" r="2" fill="#93d9ef" opacity="0.11"/>
+<circle cx="564" cy="373" r="2" fill="#93d9ef" opacity="0.41"/>
+<circle cx="92" cy="1341" r="1" fill="#93d9ef" opacity="0.40"/>
+<circle cx="1038" cy="955" r="0.8" fill="#93d9ef" opacity="0.26"/>
+<circle cx="457" cy="1163" r="0.8" fill="#93d9ef" opacity="0.32"/>
+<circle cx="634" cy="259" r="0.8" fill="#93d9ef" opacity="0.47"/>
+<circle cx="874" cy="535" r="0.8" fill="#93d9ef" opacity="0.22"/>
+<circle cx="961" cy="957" r="2" fill="#93d9ef" opacity="0.22"/>
+<circle cx="57" cy="510" r="1" fill="#93d9ef" opacity="0.26"/>
+<circle cx="583" cy="1461" r="1" fill="#93d9ef" opacity="0.47"/>
+<circle cx="76" cy="1149" r="1" fill="#93d9ef" opacity="0.34"/>
+<circle cx="654" cy="1741" r="1.3" fill="#93d9ef" opacity="0.35"/>
+<circle cx="255" cy="718" r="0.8" fill="#93d9ef" opacity="0.26"/>
+<circle cx="672" cy="234" r="0.8" fill="#93d9ef" opacity="0.36"/>
+<circle cx="235" cy="461" r="2" fill="#93d9ef" opacity="0.12"/>
+<circle cx="194" cy="1818" r="1" fill="#93d9ef" opacity="0.28"/>
+<circle cx="194" cy="325" r="2" fill="#93d9ef" opacity="0.31"/>
+<circle cx="537" cy="1581" r="2" fill="#93d9ef" opacity="0.44"/>
+<circle cx="960" cy="1049" r="1.3" fill="#93d9ef" opacity="0.36"/>
+<circle cx="237" cy="373" r="1.3" fill="#93d9ef" opacity="0.25"/>
+<circle cx="1022" cy="1418" r="1" fill="#93d9ef" opacity="0.34"/>
+<circle cx="790" cy="1709" r="0.8" fill="#93d9ef" opacity="0.37"/>
+<circle cx="899" cy="1415" r="0.8" fill="#93d9ef" opacity="0.22"/>
+<circle cx="588" cy="1131" r="0.8" fill="#93d9ef" opacity="0.37"/>
+<circle cx="886" cy="873" r="2" fill="#93d9ef" opacity="0.13"/>
+<circle cx="712" cy="871" r="1" fill="#93d9ef" opacity="0.25"/>
+<circle cx="771" cy="1278" r="2" fill="#93d9ef" opacity="0.30"/>
+<circle cx="83" cy="1287" r="0.8" fill="#93d9ef" opacity="0.18"/>
+<circle cx="129" cy="1935" r="1" fill="#93d9ef" opacity="0.19"/>
+<circle cx="369" cy="512" r="1.3" fill="#93d9ef" opacity="0.41"/>
+<circle cx="923" cy="1268" r="2" fill="#93d9ef" opacity="0.36"/>
+<circle cx="668" cy="1516" r="2" fill="#93d9ef" opacity="0.43"/>
+<circle cx="893" cy="1777" r="2" fill="#93d9ef" opacity="0.35"/>
+<circle cx="72" cy="1274" r="1.3" fill="#93d9ef" opacity="0.38"/>
+<circle cx="305" cy="611" r="2" fill="#93d9ef" opacity="0.24"/>
+<circle cx="506" cy="1123" r="1.3" fill="#93d9ef" opacity="0.24"/>
+<circle cx="825" cy="279" r="1.3" fill="#93d9ef" opacity="0.25"/>
+<circle cx="487" cy="1778" r="2" fill="#93d9ef" opacity="0.26"/>
+<circle cx="678" cy="1930" r="1.3" fill="#93d9ef" opacity="0.11"/>
+<circle cx="389" cy="1375" r="2" fill="#93d9ef" opacity="0.48"/>
+<circle cx="421" cy="897" r="1.3" fill="#93d9ef" opacity="0.16"/>
+<circle cx="870" cy="1382" r="2" fill="#93d9ef" opacity="0.11"/>
+<circle cx="947" cy="1933" r="0.8" fill="#93d9ef" opacity="0.27"/>
+<circle cx="732" cy="1078" r="1" fill="#93d9ef" opacity="0.12"/>
+<circle cx="454" cy="331" r="0.8" fill="#93d9ef" opacity="0.45"/>
+<circle cx="244" cy="381" r="1.3" fill="#93d9ef" opacity="0.38"/>
+<circle cx="822" cy="1763" r="1.3" fill="#93d9ef" opacity="0.26"/>
+<circle cx="562" cy="1179" r="1" fill="#93d9ef" opacity="0.44"/>
+<circle cx="838" cy="976" r="1.3" fill="#93d9ef" opacity="0.48"/>
+<circle cx="140" cy="266" r="1" fill="#93d9ef" opacity="0.29"/>
+<circle cx="880" cy="1515" r="2" fill="#93d9ef" opacity="0.30"/>
+<circle cx="545" cy="685" r="1" fill="#93d9ef" opacity="0.11"/>
+<circle cx="337" cy="581" r="0.8" fill="#93d9ef" opacity="0.25"/>
+<circle cx="509" cy="1900" r="1" fill="#93d9ef" opacity="0.16"/>
+<circle cx="835" cy="1242" r="2" fill="#93d9ef" opacity="0.38"/>
+<circle cx="529" cy="950" r="1" fill="#93d9ef" opacity="0.40"/>
+<circle cx="904" cy="985" r="1.3" fill="#93d9ef" opacity="0.30"/>
+<circle cx="321" cy="1083" r="1.3" fill="#93d9ef" opacity="0.39"/>
+<circle cx="683" cy="672" r="0.8" fill="#93d9ef" opacity="0.23"/>
+<circle cx="271" cy="1238" r="1.3" fill="#93d9ef" opacity="0.12"/>
+<circle cx="985" cy="1790" r="1" fill="#93d9ef" opacity="0.45"/>
+<circle cx="86" cy="1877" r="1.3" fill="#93d9ef" opacity="0.25"/>
+<circle cx="795" cy="1831" r="2" fill="#93d9ef" opacity="0.31"/>
+<circle cx="69" cy="1722" r="2" fill="#93d9ef" opacity="0.36"/>
+<circle cx="859" cy="454" r="0.8" fill="#93d9ef" opacity="0.34"/>
+<circle cx="713" cy="927" r="2" fill="#93d9ef" opacity="0.24"/>
+<circle cx="110" cy="1567" r="0.8" fill="#93d9ef" opacity="0.32"/>
+<circle cx="820" cy="1211" r="2" fill="#93d9ef" opacity="0.40"/>
+<circle cx="71" cy="1743" r="1.3" fill="#93d9ef" opacity="0.38"/>
+<circle cx="735" cy="828" r="2" fill="#93d9ef" opacity="0.39"/>
+<circle cx="629" cy="1557" r="0.8" fill="#93d9ef" opacity="0.45"/>
+<circle cx="390" cy="791" r="1.3" fill="#93d9ef" opacity="0.28"/>
+<circle cx="700" cy="908" r="1.3" fill="#93d9ef" opacity="0.44"/>
+<circle cx="66" cy="810" r="2" fill="#93d9ef" opacity="0.22"/>
+<circle cx="229" cy="1424" r="1.3" fill="#93d9ef" opacity="0.46"/>
+<circle cx="557" cy="1192" r="2" fill="#93d9ef" opacity="0.22"/>
+<circle cx="536" cy="1257" r="0.8" fill="#93d9ef" opacity="0.40"/>
+<circle cx="714" cy="1084" r="1.3" fill="#93d9ef" opacity="0.13"/>
+<circle cx="415" cy="1596" r="0.8" fill="#93d9ef" opacity="0.39"/>
+<circle cx="381" cy="1837" r="2" fill="#93d9ef" opacity="0.29"/>
+<circle cx="396" cy="1786" r="1" fill="#93d9ef" opacity="0.22"/>
+<circle cx="280" cy="1019" r="2" fill="#93d9ef" opacity="0.33"/>
+<circle cx="550" cy="1166" r="1" fill="#93d9ef" opacity="0.37"/>
+<circle cx="875" cy="1527" r="1" fill="#93d9ef" opacity="0.48"/>
+<circle cx="585" cy="1792" r="2" fill="#93d9ef" opacity="0.23"/>
+<circle cx="238" cy="986" r="0.8" fill="#93d9ef" opacity="0.22"/>
+<circle cx="423" cy="609" r="0.8" fill="#93d9ef" opacity="0.27"/>
+<circle cx="891" cy="1564" r="0.8" fill="#93d9ef" opacity="0.33"/>
+<circle cx="285" cy="1751" r="0.8" fill="#93d9ef" opacity="0.18"/>
+<circle cx="522" cy="281" r="2" fill="#93d9ef" opacity="0.46"/>
+<circle cx="180" cy="555" r="1.3" fill="#93d9ef" opacity="0.17"/>
+<circle cx="217" cy="1109" r="1.3" fill="#93d9ef" opacity="0.30"/>
+<circle cx="479" cy="777" r="2" fill="#93d9ef" opacity="0.47"/>
+<circle cx="664" cy="1557" r="0.8" fill="#93d9ef" opacity="0.12"/>
+<circle cx="1008" cy="311" r="0.8" fill="#93d9ef" opacity="0.28"/>
+<circle cx="698" cy="1550" r="0.8" fill="#93d9ef" opacity="0.44"/>
+<circle cx="867" cy="909" r="2" fill="#93d9ef" opacity="0.35"/>
+<circle cx="996" cy="948" r="1" fill="#93d9ef" opacity="0.31"/>
+<circle cx="562" cy="1250" r="0.8" fill="#93d9ef" opacity="0.23"/>
+<circle cx="766" cy="1235" r="0.8" fill="#93d9ef" opacity="0.10"/>
+<circle cx="876" cy="1568" r="1" fill="#93d9ef" opacity="0.28"/>
+<circle cx="852" cy="683" r="1" fill="#93d9ef" opacity="0.43"/>
+<circle cx="215" cy="582" r="0.8" fill="#93d9ef" opacity="0.34"/>
+<circle cx="37" cy="1784" r="1.3" fill="#93d9ef" opacity="0.14"/>
+<circle cx="189" cy="424" r="1.3" fill="#93d9ef" opacity="0.41"/>
+<circle cx="422" cy="1503" r="0.8" fill="#93d9ef" opacity="0.29"/>
+<circle cx="1039" cy="1444" r="0.8" fill="#93d9ef" opacity="0.40"/>
+<circle cx="598" cy="752" r="1" fill="#93d9ef" opacity="0.26"/>
+<circle cx="502" cy="700" r="0.8" fill="#93d9ef" opacity="0.30"/>
+<circle cx="798" cy="1162" r="0.8" fill="#93d9ef" opacity="0.30"/>
+<circle cx="68" cy="361" r="1" fill="#93d9ef" opacity="0.15"/>
+<circle cx="521" cy="586" r="1.3" fill="#93d9ef" opacity="0.40"/>
+<circle cx="881" cy="963" r="1" fill="#93d9ef" opacity="0.36"/>
+<path d="M24 930 V1538 L124 1638 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="24" cy="1538" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M46 930 V1093 L146 1193 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="46" cy="1093" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M68 930 V1366 L168 1466 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="68" cy="1366" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M90 930 V1263 L190 1363 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="90" cy="1263" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M112 930 V1345 L212 1445 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="112" cy="1345" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M134 930 V1403 L234 1503 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="134" cy="1403" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M156 930 V1398 L256 1498 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="156" cy="1398" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M178 930 V1078 L278 1178 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="178" cy="1078" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M1056 930 V1124 L956 1224 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="1056" cy="1124" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M1034 930 V1370 L934 1470 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="1034" cy="1370" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M1012 930 V1418 L912 1518 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="1012" cy="1418" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M990 930 V1131 L890 1231 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="990" cy="1131" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M968 930 V1101 L868 1201 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="968" cy="1101" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M946 930 V1476 L846 1576 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="946" cy="1476" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M924 930 V1415 L824 1515 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="924" cy="1415" r="2.5" fill="#6df0e1" opacity=".55"/>
+<path d="M902 930 V1125 L802 1225 V1810" fill="none" stroke="#5ce0e6" stroke-opacity=".09"/>
+<circle cx="902" cy="1125" r="2.5" fill="#6df0e1" opacity=".55"/>
+
+  <!-- Release identity -->
+  <path d="M76 102h25m-25 0v25M1004 102h-25m25 0v25" fill="none" stroke="#4c798e"/>
+  <text x="112" y="120" font-size="26" font-weight="700" letter-spacing="1">libcr<tspan font-weight="400" fill="#7794a9"> / </tspan></text>
+  <text x="217" y="119" class="label" font-size="16">APP COLLECTION</text>
+  <circle cx="802" cy="112" r="4" fill="#78e8ca"/>
+  <text x="969" y="119" text-anchor="end" class="mono small">RELEASE 1.6.8</text>
+
+  <!-- Orbital geometry frames the original vector app icon. -->
+  <g fill="none" stroke="#74c9df">
+    <circle cx="540" cy="445" r="241" stroke-opacity=".10"/>
+    <circle cx="540" cy="445" r="273" stroke-opacity=".08" stroke-dasharray="2 13"/>
+    <path d="M320 347A241 241 0 0 1 454 220M761 542A241 241 0 0 1 626 670" stroke-opacity=".5"/>
+    <ellipse cx="540" cy="453" rx="375" ry="102" transform="rotate(-23 540 453)" stroke-opacity=".16"/>
+  </g>
+  <circle cx="224" cy="588" r="4" fill="#86f8da"/>
+  <circle cx="856" cy="318" r="3" fill="#88b7ff"/>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="380" height="380" x="350" y="257">
+  <defs>
+    
+    <filter id="crfiles-drop-shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="18" result="body-blur" />
+      <feOffset in="body-blur" dx="0" dy="16" result="body-offset" />
+      <feFlood flood-color="#000000" flood-opacity="0.22" result="body-color" />
+      <feComposite in="body-color" in2="body-offset" operator="in" result="body-shadow" />
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="edge-blur" />
+      <feOffset in="edge-blur" dx="0" dy="4" result="edge-offset" />
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="edge-color" />
+      <feComposite in="edge-color" in2="edge-offset" operator="in" result="edge-shadow" />
+      <feMerge>
+        <feMergeNode in="body-shadow" />
+        <feMergeNode in="edge-shadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    
+    <filter id="crfiles-handle-shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="handle-blur" />
+      <feOffset in="handle-blur" dx="0" dy="5" result="handle-offset" />
+      <feFlood flood-color="#000000" flood-opacity="0.28" result="handle-color" />
+      <feComposite in="handle-color" in2="handle-offset" operator="in" result="handle-shadow" />
+      <feMerge>
+        <feMergeNode in="handle-shadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    
+    <linearGradient id="crfiles-body-frame-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#E8EAED" />
+      <stop offset="100%" stop-color="#D2D6DC" />
+    </linearGradient>
+
+    
+    <linearGradient id="crfiles-inner-bezel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BCC1C8" />
+      <stop offset="100%" stop-color="#E5E8EC" />
+    </linearGradient>
+
+    
+    <linearGradient id="crfiles-chrome-red" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F24B4B" />
+      <stop offset="100%" stop-color="#D93025" />
+    </linearGradient>
+
+    
+    <linearGradient id="crfiles-chrome-green" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34A853" />
+      <stop offset="100%" stop-color="#188038" />
+    </linearGradient>
+
+    
+    <linearGradient id="crfiles-chrome-yellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBBC04" />
+      <stop offset="100%" stop-color="#F29900" />
+    </linearGradient>
+
+    
+    <linearGradient id="crfiles-handle-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#E8EAED" />
+      <stop offset="100%" stop-color="#BCC1CA" />
+    </linearGradient>
+
+    
+    <linearGradient id="crfiles-highlight-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.1" />
+    </linearGradient>
+
+    
+    <linearGradient id="crfiles-drawer-crevice" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.0" />
+    </linearGradient>
+
+    
+    <g id="crfiles-handle">
+      <path d="M 0,16                 C 0,7.16 7.16,0 16,0                 L 80,0                 C 88.84,0 96,7.16 96,16                 L 96,26                 C 96,27.1 95.1,28 94,28                 L 82,28                 C 80.9,28 80,27.1 80,26                 L 80,18                 C 80,14.7 77.3,12 74,12                 L 22,12                 C 18.7,12 16,14.7 16,18                 L 16,26                 C 16,27.1 15.1,28 14,28                 L 2,28                 C 0.9,28 0,27.1 0,26                 Z" fill="url(#crfiles-handle-grad)" filter="url(#crfiles-handle-shadow)" />
+      
+      <path d="M 2,16 C 2,8.2 8.2,2 16,2 L 80,2 C 87.8,2 94,8.2 94,16" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8" />
+    </g>
+  </defs>
+
+  
+  <rect x="76" y="32" width="360" height="438" rx="46" ry="46" fill="url(#crfiles-body-frame-grad)" filter="url(#crfiles-drop-shadow)" />
+  
+  
+  <rect x="88" y="44" width="336" height="414" rx="36" ry="36" fill="url(#crfiles-inner-bezel)" />
+
+  
+  <g clip-path="url(#crfiles-drawers-clip)">
+    <clipPath id="crfiles-drawers-clip">
+      <rect x="92" y="48" width="328" height="406" rx="32" ry="32" />
+    </clipPath>
+
+    
+    <g id="crfiles-drawer-top">
+      <rect x="92" y="48" width="328" height="134" fill="url(#crfiles-chrome-red)" />
+      
+      <rect x="92" y="48" width="328" height="3" fill="url(#crfiles-highlight-line)" />
+      
+      <use xlink:href="#crfiles-handle" x="208" y="98" />
+      
+      <rect x="92" y="179" width="328" height="3" fill="#B31412" opacity="0.6" />
+    </g>
+
+    
+    <g id="crfiles-drawer-middle">
+      <rect x="92" y="182" width="328" height="136" fill="url(#crfiles-chrome-green)" />
+      
+      <rect x="92" y="182" width="328" height="8" fill="url(#crfiles-drawer-crevice)" />
+      <rect x="92" y="183" width="328" height="2" fill="url(#crfiles-highlight-line)" />
+      
+      <use xlink:href="#crfiles-handle" x="208" y="234" />
+      
+      <rect x="92" y="315" width="328" height="3" fill="#0D652D" opacity="0.6" />
+    </g>
+
+    
+    <g id="crfiles-drawer-bottom">
+      <rect x="92" y="318" width="328" height="136" fill="url(#crfiles-chrome-yellow)" />
+      
+      <rect x="92" y="318" width="328" height="8" fill="url(#crfiles-drawer-crevice)" />
+      <rect x="92" y="319" width="328" height="2" fill="url(#crfiles-highlight-line)" />
+      
+      <use xlink:href="#crfiles-handle" x="208" y="370" />
+    </g>
+  </g>
+
+  
+  <rect x="77.5" y="33.5" width="357" height="435" rx="44.5" ry="44.5" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.6" />
+</svg>
+  <g id="chromium-superscript" opacity=".204" aria-label="Chromium">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" x="681" y="248" width="80" height="80"><g clip-path="url(#chromium-badge-a)"><path d="M128 191.995c35.346 0 64-28.654 64-64 0-35.347-28.654-64-64-64-35.346 0-64 28.654-64 64 0 35.346 28.654 64 64 64Z" fill="#fff" /><path d="M96.01 183.41a63.681 63.681 0 0 1-23.42-23.43l-.007.004-55.425-96a128.027 128.027 0 0 0 110.841 192.018l55.436-96.018a63.985 63.985 0 0 1-16.465 18.775 64.007 64.007 0 0 1-70.96 4.651Z" fill="#669DF6" /><path d="M191.991 127.984a63.683 63.683 0 0 1-8.581 31.996l.007.004-55.426 96a128.029 128.029 0 0 0 110.872-192H127.991a64 64 0 0 1 64 64Z" fill="#AECBFA" /><path d="M128 180c28.719 0 52-23.281 52-52s-23.281-52-52-52-52 23.281-52 52 23.281 52 52 52Z" fill="#1A73E8" /><path d="M95.99 72.59a63.684 63.684 0 0 1 32.001-8.566v-.008h110.851A128.035 128.035 0 0 0 127.991.026 128.028 128.028 0 0 0 17.13 63.999l55.436 96.018a64.003 64.003 0 0 1 4.65-70.961A64 64 0 0 1 95.991 72.59Z" fill="#1967D2" /></g><defs><clipPath id="chromium-badge-a"><path fill="#fff" d="M0 0h256v256H0z" /></clipPath></defs></svg>
+  </g>
+  <text x="540" y="778" text-anchor="middle" font-size="132" font-weight="700" letter-spacing="-7">crFiles</text>
+  <text id="release-version" x="540" y="868" text-anchor="middle" font-size="54" letter-spacing="-1"><tspan fill="#7cf4dc">1.6.8</tspan><tspan dx="16" fill="#c8d8e7">released</tspan></text>
+  <text x="540" y="938" text-anchor="middle" font-size="27" fill="#94afc4">Every file. In its place.</text>
+
+  <!-- File constellation: search, preview, archiving and QuickShare. -->
+  <g fill="none" stroke-linejoin="round">
+    <path d="M100 1550L540 1320L980 1550L540 1780Z" stroke="#5da5be" stroke-opacity=".12"/>
+    <path d="M155 1550L540 1350L925 1550L540 1750Z" stroke="#5da5be" stroke-opacity=".12"/>
+    <path d="M210 1550L540 1380L870 1550L540 1720Z" stroke="#69d6d7" stroke-opacity=".2"/>
+    <path d="M100 1550H980M540 1320V1780M320 1435L760 1665M320 1665L760 1435" stroke="#67a7c0" stroke-opacity=".11"/>
+    <ellipse cx="540" cy="1522" rx="413" ry="154" stroke="#559cbd" stroke-opacity=".15" stroke-dasharray="4 10"/>
+    <path d="M219 1190H300L380 1270M852 1265H800L730 1335M236 1578H310L372 1516M848 1590H768L708 1530" stroke="#64e7d4" stroke-opacity=".45"/>
+  </g>
+
+  <g transform="translate(112 1096)">
+    <rect width="188" height="136" rx="18" fill="url(#card)" stroke="#466f88" stroke-opacity=".5"/>
+    <circle cx="43" cy="43" r="14" fill="none" stroke="#7ee9da" stroke-width="2.5"/>
+    <path d="M54 54l12 12M83 35h73M83 49h49" fill="none" stroke="#7ee9da" stroke-width="2.5"/>
+    <text x="23" y="103" class="caption">SEARCH</text>
+  </g>
+  <g transform="translate(792 1187)">
+    <rect width="176" height="136" rx="18" fill="url(#card)" stroke="#466f88" stroke-opacity=".5"/>
+    <rect x="24" y="24" width="48" height="40" rx="5" fill="none" stroke="#87b6ff" stroke-width="2"/>
+    <circle cx="58" cy="35" r="4" fill="#87b6ff"/>
+    <path d="M26 57l14-16 16 18 8-9 8 9" fill="none" stroke="#87b6ff" stroke-width="2"/>
+    <text x="23" y="103" class="caption">PREVIEW</text>
+  </g>
+
+  <!-- Layered document sheets emerge from the luminous folder. -->
+  <g transform="rotate(-13 480 1370)">
+    <path d="M354 1215v-100q0-16 16-16h102l48 48v188H354Z" fill="url(#card)" stroke="#618ea8" stroke-width="1.5"/>
+    <path d="M472 1099v48h48M380 1180h94M380 1196h72M380 1212h86" fill="none" stroke="#89b8cb" stroke-opacity=".65" stroke-width="2"/>
+  </g>
+  <g transform="rotate(9 606 1260)">
+    <path d="M542 1086h103l48 48v224H526v-256q0-16 16-16Z" fill="url(#card)" stroke="#75adb7" stroke-width="1.5"/>
+    <path d="M645 1086v48h48" fill="none" stroke="#75adb7" stroke-width="1.5"/>
+    <rect x="550" y="1160" width="119" height="80" rx="6" fill="#214459"/>
+    <path d="M552 1222l35-36 32 30 20-17 28 30" fill="none" stroke="#75d8d3" stroke-width="2"/>
+    <circle cx="643" cy="1178" r="8" fill="#79dbc8"/>
+    <path d="M550 1260h113M550 1277h79" stroke="#75adb7" stroke-width="2"/>
+  </g>
+  <path d="M325 1281v-39q0-22 22-22h108l35 38h227q25 0 25 25v236H325Z" fill="url(#folder-back)" stroke="#6bcbbf" stroke-width="2"/>
+  <path d="M298 1312q-4-22 21-22h435q24 0 19 25l-37 239q-3 21-26 21H357q-23 0-26-22Z" fill="url(#folder-front)" stroke="url(#edge)" stroke-width="2"/>
+  <path d="M319 1294h435" stroke="#a5fff1" stroke-width="2"/>
+  <path d="M345 1520h376" stroke="#69ffe0" stroke-width="2" opacity=".5" filter="url(#glow)"/>
+  <path d="M345 1520h376" stroke="#69ffe0" stroke-width="1" opacity=".5"/>
+  <g transform="translate(489 1360)" fill="none" stroke="#a3ffea" stroke-width="2.5" stroke-linecap="round">
+    <rect width="103" height="91" rx="16" stroke-opacity=".3"/>
+    <path d="M28 29h47M28 46h47M28 63h30"/>
+    <circle cx="77" cy="64" r="3" fill="#a3ffea" stroke="none"/>
+  </g>
+  <text x="540" y="1500" text-anchor="middle" class="mono small" fill="#99ccda">YOUR FILES, CONNECTED</text>
+
+  <g transform="translate(102 1530)">
+    <rect width="184" height="130" rx="18" fill="url(#card)" stroke="#466f88" stroke-opacity=".5"/>
+    <path d="M24 34l24-13 24 13v29L48 76 24 63ZM24 34l24 13 24-13M48 47v29M36 27l24 14v15" fill="none" stroke="#eac576" stroke-width="2" stroke-linejoin="round"/>
+    <text x="23" y="105" class="caption">ARCHIVE</text>
+  </g>
+  <g transform="translate(783 1528)">
+    <rect width="195" height="148" rx="18" fill="url(#card)" stroke="#466f88" stroke-opacity=".5"/>
+    <g aria-label="Android">
+      <path d="M36 38L28 24M78 38L86 24" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M23 69C23 20 91 20 91 69Z" fill="#3ddc84"/>
+      <circle cx="41" cy="53" r="3" fill="#102438"/>
+      <circle cx="73" cy="53" r="3" fill="#102438"/>
+    </g>
+    <text x="23" y="112" font-size="22" fill="#9cb6c8">QuickShare</text>
+  </g>
+
+  <text x="540" y="1818" text-anchor="middle" font-size="33" font-weight="500" letter-spacing="-1">Find. Preview. Organize. Share.</text>
+  <g class="mono" font-size="17" letter-spacing="1.5" fill="#829bad">
+    <text x="540" y="1872" text-anchor="middle" xml:space="preserve">Windows<tspan fill="#476175">  /  </tspan>macOS<tspan fill="#476175">  /  </tspan>Linux</text>
+  </g>
+
+  <!-- Embedded family icons: no raster images or external dependencies. -->
+  <path d="M90 1920H990" stroke="url(#fade-line)"/>
+  <text x="540" y="1972" text-anchor="middle" font-size="24" letter-spacing="1" style="fill:#8ab4f8">https://libcr.github.io/</text>
+  <text x="540" y="2022" text-anchor="middle" font-size="18" letter-spacing="2" style="fill:#4285F4">THE libcr FAMILY BUILT WITH C++ and chromium</text>
+  <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 256 256" role="img" aria-labelledby="crScrcpy-title crScrcpy-desc" x="142.0" y="2072">
+  <title id="crScrcpy-title">crScrcpy application icon</title>
+  <desc id="crScrcpy-desc">A futuristic rounded-square icon with a Chrome-inspired red, yellow and green gradient border and a blue Android robot.</desc>
+
+  <defs>
+    
+    <linearGradient id="crScrcpy-chromeRedYellow" x1="32" y1="18" x2="228" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A50E0E" />
+      <stop offset="0.28" stop-color="#EA4335" />
+      <stop offset="0.72" stop-color="#FBBC04" />
+      <stop offset="1" stop-color="#FDE293" />
+    </linearGradient>
+    <linearGradient id="crScrcpy-chromeYellowGreen" x1="230" y1="62" x2="176" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDE293" />
+      <stop offset="0.22" stop-color="#FBBC04" />
+      <stop offset="0.68" stop-color="#34A853" />
+      <stop offset="1" stop-color="#188038" />
+    </linearGradient>
+    <linearGradient id="crScrcpy-chromeGreenRed" x1="176" y1="236" x2="26" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#188038" />
+      <stop offset="0.34" stop-color="#34A853" />
+      <stop offset="0.76" stop-color="#EA4335" />
+      <stop offset="1" stop-color="#A50E0E" />
+    </linearGradient>
+
+    
+    <radialGradient id="crScrcpy-panel" cx="50%" cy="40%" r="72%">
+      <stop offset="0" stop-color="#163B70" />
+      <stop offset="0.5" stop-color="#0B2143" />
+      <stop offset="1" stop-color="#061426" />
+    </radialGradient>
+    <linearGradient id="crScrcpy-blueR" x1="82" y1="72" x2="174" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#AECBFA" />
+      <stop offset="0.3" stop-color="#6EA8FE" />
+      <stop offset="0.68" stop-color="#4285F4" />
+      <stop offset="1" stop-color="#174EA6" />
+    </linearGradient>
+    <linearGradient id="crScrcpy-blueEdge" x1="93" y1="84" x2="165" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8F0FE" stop-opacity="0.9" />
+      <stop offset="0.55" stop-color="#8AB4F8" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#4285F4" stop-opacity="0" />
+    </linearGradient>
+
+  </defs>
+
+  
+  <path d="M56 22 H200 Q234 22 234 56 V200 Q234 234 200 234 H56 Q22 234 22 200 V56 Q22 22 56 22 Z" fill="url(#crScrcpy-panel)" />
+
+  
+  <g fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M56 18 H200 Q238 18 238 56 V128" stroke="url(#crScrcpy-chromeRedYellow)" />
+    <path d="M238 128 V200 Q238 238 200 238 H56 Q18 238 18 200 V128" stroke="url(#crScrcpy-chromeYellowGreen)" />
+    <path d="M18 128 V56 Q18 18 56 18" stroke="url(#crScrcpy-chromeGreenRed)" />
+  </g>
+
+  
+  <g fill="none" stroke="#8AB4F8" stroke-width="2" stroke-linecap="round" opacity="0.28">
+    <path d="M43 90 H64 L76 102" />
+    <path d="M42 166 H64 L76 154" />
+    <path d="M180 80 H198 L211 67" />
+    <path d="M180 176 H198 L211 189" />
+  </g>
+  <g fill="#8AB4F8" opacity="0.7">
+    <circle cx="43" cy="90" r="3" />
+    <circle cx="42" cy="166" r="3" />
+    <circle cx="211" cy="67" r="3" />
+    <circle cx="211" cy="189" r="3" />
+  </g>
+
+  
+  <g stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M100 83 L89 66 M156 83 L167 66" fill="none" stroke="#0B57D0" stroke-width="11" opacity="0.28" />
+    <path d="M100 83 L89 66 M156 83 L167 66" fill="none" stroke="url(#crScrcpy-blueR)" stroke-width="6" />
+
+    
+    <path d="M78 119 C79 92 99 76 128 76 C157 76 177 92 178 119 Z" fill="#0B57D0" opacity="0.3" />
+    <path d="M84 116 C85 94 102 82 128 82 C154 82 171 94 172 116 Z" fill="url(#crScrcpy-blueR)" stroke="#8AB4F8" stroke-width="2" />
+
+    
+    <circle cx="107" cy="101" r="5" fill="#071A33" />
+    <circle cx="149" cy="101" r="5" fill="#071A33" />
+    <circle cx="105.5" cy="99.5" r="1.5" fill="#E8F0FE" opacity="0.9" />
+    <circle cx="147.5" cy="99.5" r="1.5" fill="#E8F0FE" opacity="0.9" />
+
+    
+    <rect x="80" y="122" width="96" height="65" rx="11" fill="#0B57D0" opacity="0.3" />
+    <rect x="84" y="122" width="88" height="60" rx="9" fill="url(#crScrcpy-blueR)" stroke="#8AB4F8" stroke-width="2" />
+    <rect x="62" y="126" width="14" height="50" rx="7" fill="url(#crScrcpy-blueR)" stroke="#8AB4F8" stroke-width="2" />
+    <rect x="180" y="126" width="14" height="50" rx="7" fill="url(#crScrcpy-blueR)" stroke="#8AB4F8" stroke-width="2" />
+
+    
+    <rect x="96" y="176" width="17" height="27" rx="8.5" fill="url(#crScrcpy-blueR)" stroke="#8AB4F8" stroke-width="2" />
+    <rect x="143" y="176" width="17" height="27" rx="8.5" fill="url(#crScrcpy-blueR)" stroke="#8AB4F8" stroke-width="2" />
+
+    
+    <path d="M105 151 H121 L128 144 L135 151 H151" fill="none" stroke="#D2E3FC" stroke-width="3" opacity="0.7" />
+    <circle cx="128" cy="144" r="3.5" fill="#D2E3FC" opacity="0.9" />
+  </g>
+</svg>
+<text x="180.0" y="2174" class="family">crScrcpy</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 256 256" role="img" aria-labelledby="crShare-title crShare-desc" x="322.0" y="2072">
+  <title id="crShare-title">crShare application icon</title>
+  <desc id="crShare-desc">A futuristic rounded-square icon with a Chrome-inspired red, yellow and green gradient border and a blue share symbol.</desc>
+
+  <defs>
+    
+    <linearGradient id="crShare-chromeRedYellow" x1="32" y1="18" x2="228" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A50E0E" />
+      <stop offset="0.28" stop-color="#EA4335" />
+      <stop offset="0.72" stop-color="#FBBC04" />
+      <stop offset="1" stop-color="#FDE293" />
+    </linearGradient>
+    <linearGradient id="crShare-chromeYellowGreen" x1="230" y1="62" x2="176" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDE293" />
+      <stop offset="0.22" stop-color="#FBBC04" />
+      <stop offset="0.68" stop-color="#34A853" />
+      <stop offset="1" stop-color="#188038" />
+    </linearGradient>
+    <linearGradient id="crShare-chromeGreenRed" x1="176" y1="236" x2="26" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#188038" />
+      <stop offset="0.34" stop-color="#34A853" />
+      <stop offset="0.76" stop-color="#EA4335" />
+      <stop offset="1" stop-color="#A50E0E" />
+    </linearGradient>
+
+    
+    <radialGradient id="crShare-panel" cx="50%" cy="40%" r="72%">
+      <stop offset="0" stop-color="#163B70" />
+      <stop offset="0.5" stop-color="#0B2143" />
+      <stop offset="1" stop-color="#061426" />
+    </radialGradient>
+    <linearGradient id="crShare-blueR" x1="82" y1="72" x2="174" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#AECBFA" />
+      <stop offset="0.3" stop-color="#6EA8FE" />
+      <stop offset="0.68" stop-color="#4285F4" />
+      <stop offset="1" stop-color="#174EA6" />
+    </linearGradient>
+    <linearGradient id="crShare-blueEdge" x1="93" y1="84" x2="165" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8F0FE" stop-opacity="0.9" />
+      <stop offset="0.55" stop-color="#8AB4F8" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#4285F4" stop-opacity="0" />
+    </linearGradient>
+
+  </defs>
+
+  
+  <path d="M56 22 H200 Q234 22 234 56 V200 Q234 234 200 234 H56 Q22 234 22 200 V56 Q22 22 56 22 Z" fill="url(#crShare-panel)" />
+
+  
+  <g fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M56 18 H200 Q238 18 238 56 V128" stroke="url(#crShare-chromeRedYellow)" />
+    <path d="M238 128 V200 Q238 238 200 238 H56 Q18 238 18 200 V128" stroke="url(#crShare-chromeYellowGreen)" />
+    <path d="M18 128 V56 Q18 18 56 18" stroke="url(#crShare-chromeGreenRed)" />
+  </g>
+
+  
+  <g fill="none" stroke="#8AB4F8" stroke-width="2" stroke-linecap="round" opacity="0.28">
+    <path d="M43 90 H64 L76 102" />
+    <path d="M42 166 H64 L76 154" />
+    <path d="M180 80 H198 L211 67" />
+    <path d="M180 176 H198 L211 189" />
+  </g>
+  <g fill="#8AB4F8" opacity="0.7">
+    <circle cx="43" cy="90" r="3" />
+    <circle cx="42" cy="166" r="3" />
+    <circle cx="211" cy="67" r="3" />
+    <circle cx="211" cy="189" r="3" />
+  </g>
+
+  
+  <g stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M101 118 L147 92 M101 138 L147 164" fill="none" stroke="#0B57D0" stroke-width="20" opacity="0.25" />
+
+    
+    <path d="M101 118 L147 92 M101 138 L147 164" fill="none" stroke="url(#crShare-blueR)" stroke-width="12" />
+    <path d="M105 116 L147 93 M105 140 L147 163" fill="none" stroke="#AECBFA" stroke-width="3" opacity="0.58" />
+
+    
+    <circle cx="88" cy="128" r="27" fill="#0B57D0" opacity="0.28" />
+    <circle cx="88" cy="128" r="21" fill="url(#crShare-blueR)" stroke="#8AB4F8" stroke-width="3" />
+
+    
+    <circle cx="166" cy="82" r="27" fill="#0B57D0" opacity="0.28" />
+    <circle cx="166" cy="82" r="21" fill="url(#crShare-blueR)" stroke="#8AB4F8" stroke-width="3" />
+
+    
+    <circle cx="166" cy="174" r="27" fill="#0B57D0" opacity="0.28" />
+    <circle cx="166" cy="174" r="21" fill="url(#crShare-blueR)" stroke="#8AB4F8" stroke-width="3" />
+
+    
+    <g fill="#E8F0FE" opacity="0.72">
+      <circle cx="81" cy="121" r="5" />
+      <circle cx="159" cy="75" r="5" />
+      <circle cx="159" cy="167" r="5" />
+    </g>
+  </g>
+</svg>
+<text x="360.0" y="2174" class="family">crShare</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 128 128" x="502.0" y="2072">
+
+  <defs>
+    <linearGradient id="crPDF-chromeGradient" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA4335" />
+      <stop offset="0.38" stop-color="#FBBC05" />
+      <stop offset="0.7" stop-color="#34A853" />
+      <stop offset="1" stop-color="#EA4335" />
+    </linearGradient>
+  </defs>
+
+  
+  <rect x="5" y="5" width="118" height="118" rx="18" fill="none" stroke="url(#crPDF-chromeGradient)" stroke-width="5" />
+
+  
+  <path fill="#4285F4" transform="translate(-0.682 3.859)" d="m 23.592017,45.757 c 0,-2.17 0.434,-3.41 3.72,-3.41 3.596,0 7.75,1.488 7.75,9.052 0,6.448 -3.286,9.176 -8.37,9.176 -0.93,0 -2.232,-0.062 -3.1,-0.186 z m -7.564,29.078 c 0,2.356 -0.93,3.1 -3.41,3.41 l -0.868,0.124 c -0.248,0.062 -0.496,0.186 -0.496,0.558 v 1.426 l 0.124,0.124 c 2.294,-0.062 6.076,-0.124 8.432,-0.124 2.356,0 6.758,0.062 9.052,0.124 l 0.124,-0.124 v -1.426 c 0,-0.372 -0.124,-0.496 -0.496,-0.558 l -1.178,-0.124 c -2.48,-0.248 -3.72,-1.054 -3.72,-3.41 V 62.869 c 0.868,0.124 1.922,0.186 3.41,0.186 12.214,0 15.934,-6.758 15.934,-12.71 0,-3.968 -2.666,-10.54 -15.128,-10.54 -5.022,0 -12.772,0.434 -16.43,0.434 l -0.124,0.124 v 1.488 c 0,0.248 0.186,0.496 0.682,0.496 l 1.984,0.124 c 1.364,0.062 2.108,0.992 2.108,3.162 z m 41.461911,0.868 V 44.951 c 0,-1.984 1.612,-2.17 3.844,-2.17 12.214,0 16.492,10.602 16.492,19.964 0,12.152 -7.006,15.128 -14.942,15.128 -4.836,0 -5.394,-0.372 -5.394,-2.17 z m -12.214,4.65 h 19.468 c 9.238,0 21.266,-3.906 21.266,-19.158 0,-11.47 -9.796,-20.894 -22.382,-20.894 h -18.352 l -0.124,0.124 v 1.426 c 0,0.31 0.248,0.496 0.496,0.496 h 0.868 c 2.48,0 3.41,0.744 3.41,2.728 v 30.504 c 0,1.984 -0.93,2.728 -3.41,2.728 h -0.868 c -0.248,0 -0.496,0.186 -0.496,0.558 v 1.364 z M 100.12996,75.641 V 60.327 h 7.006 c 1.55,0 1.798,1.86 2.17,4.402 0,0.248 0.372,0.62 0.992,0.62 h 1.302 l 0.372,-0.558 c -0.124,-1.054 -0.434,-3.472 -0.434,-5.766 0,-2.232 0.31,-4.774 0.434,-5.766 l -0.372,-0.62 h -1.302 c -0.62,0 -0.992,0.434 -0.992,0.682 -0.372,2.48 -0.62,4.402 -2.17,4.402 h -7.006 V 44.951 c 0,-1.302 0.31,-1.798 0.868,-1.798 h 8.06 c 4.154,0 5.704,4.588 6.572,7.75 l 2.48,-0.558 c -0.62,-3.162 -1.054,-6.448 -1.302,-10.044 H 87.977957 l -0.186,0.124 v 1.426 c 0,0.31 0.248,0.496 0.496,0.496 h 0.868 c 2.48,0 3.41,0.744 3.41,2.728 v 30.566 c 0,1.984 -0.93,2.728 -3.41,2.728 h -0.868 c -0.248,0 -0.496,0.186 -0.496,0.558 v 1.426 l 0.124,0.124 c 0,0 6.014,-0.124 8.432,-0.124 2.232,0 8.432003,0.124 8.432003,0.124 l 0.124,-0.124 v -1.426 c 0,-0.372 -0.186,-0.558 -0.496,-0.558 h -0.868 c -2.542,0 -3.41,-0.992 -3.41,-2.728 z" />
+</svg>
+<text x="540.0" y="2174" class="family">crPDF</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 208 128" x="682.0" y="2072">
+
+  <defs>
+    <linearGradient id="crMarkdown-chromeGradient" x1="0" y1="0" x2="208" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA4335" />
+      <stop offset="0.38" stop-color="#FBBC05" />
+      <stop offset="0.7" stop-color="#34A853" />
+      <stop offset="1" stop-color="#EA4335" />
+    </linearGradient>
+  </defs>
+
+  
+  <rect x="5" y="5" width="198" height="118" rx="10" fill="none" stroke="url(#crMarkdown-chromeGradient)" stroke-width="10" />
+
+  
+  <path fill="#4285F4" d="M26 96V32h18l20 25 20-25h18v64H83V61L64 85 45 61v35z" />
+
+  
+  <path fill="#4285F4" d="M116 32h28c24 0 38 12 38 32s-14 32-38 32h-28zm19 17v30h8c13 0 20-5 20-15s-7-15-20-15z" />
+</svg>
+<text x="720.0" y="2174" class="family">crMarkdown</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 256 256" role="img" aria-labelledby="crRequest-title crRequest-desc" x="862.0" y="2072">
+  <title id="crRequest-title">crRequest application icon</title>
+  <desc id="crRequest-desc">A futuristic rounded-square icon with a Chrome-inspired red, yellow and green gradient border and a blue letter R.</desc>
+
+  <defs>
+    
+    <linearGradient id="crRequest-chromeRedYellow" x1="32" y1="18" x2="228" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A50E0E" />
+      <stop offset="0.28" stop-color="#EA4335" />
+      <stop offset="0.72" stop-color="#FBBC04" />
+      <stop offset="1" stop-color="#FDE293" />
+    </linearGradient>
+    <linearGradient id="crRequest-chromeYellowGreen" x1="230" y1="62" x2="176" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDE293" />
+      <stop offset="0.22" stop-color="#FBBC04" />
+      <stop offset="0.68" stop-color="#34A853" />
+      <stop offset="1" stop-color="#188038" />
+    </linearGradient>
+    <linearGradient id="crRequest-chromeGreenRed" x1="176" y1="236" x2="26" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#188038" />
+      <stop offset="0.34" stop-color="#34A853" />
+      <stop offset="0.76" stop-color="#EA4335" />
+      <stop offset="1" stop-color="#A50E0E" />
+    </linearGradient>
+
+    
+    <radialGradient id="crRequest-panel" cx="50%" cy="40%" r="72%">
+      <stop offset="0" stop-color="#163B70" />
+      <stop offset="0.5" stop-color="#0B2143" />
+      <stop offset="1" stop-color="#061426" />
+    </radialGradient>
+    <linearGradient id="crRequest-blueR" x1="82" y1="72" x2="174" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#AECBFA" />
+      <stop offset="0.3" stop-color="#6EA8FE" />
+      <stop offset="0.68" stop-color="#4285F4" />
+      <stop offset="1" stop-color="#174EA6" />
+    </linearGradient>
+    <linearGradient id="crRequest-blueEdge" x1="93" y1="84" x2="165" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8F0FE" stop-opacity="0.9" />
+      <stop offset="0.55" stop-color="#8AB4F8" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#4285F4" stop-opacity="0" />
+    </linearGradient>
+
+  </defs>
+
+  
+  <path d="M56 22 H200 Q234 22 234 56 V200 Q234 234 200 234 H56 Q22 234 22 200 V56 Q22 22 56 22 Z" fill="url(#crRequest-panel)" />
+
+  
+  <g fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M56 18 H200 Q238 18 238 56 V128" stroke="url(#crRequest-chromeRedYellow)" />
+    <path d="M238 128 V200 Q238 238 200 238 H56 Q18 238 18 200 V128" stroke="url(#crRequest-chromeYellowGreen)" />
+    <path d="M18 128 V56 Q18 18 56 18" stroke="url(#crRequest-chromeGreenRed)" />
+  </g>
+
+  
+  <g fill="none" stroke="#8AB4F8" stroke-width="2" stroke-linecap="round" opacity="0.28">
+    <path d="M43 90 H64 L76 102" />
+    <path d="M42 166 H64 L76 154" />
+    <path d="M180 80 H198 L211 67" />
+    <path d="M180 176 H198 L211 189" />
+  </g>
+  <g fill="#8AB4F8" opacity="0.7">
+    <circle cx="43" cy="90" r="3" />
+    <circle cx="42" cy="166" r="3" />
+    <circle cx="211" cy="67" r="3" />
+    <circle cx="211" cy="189" r="3" />
+  </g>
+
+  
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M84 180 V76 H129 C157 76 174 90 174 112 C174 136 156 148 129 148 H84 M132 148 L176 180" stroke="#0B57D0" stroke-width="23" opacity="0.32" />
+    <path d="M84 180 V76 H129 C157 76 174 90 174 112 C174 136 156 148 129 148 H84 M132 148 L176 180" stroke="url(#crRequest-blueR)" stroke-width="17" />
+    <path d="M91 174 V83 H129 C150 83 166 93 166 112" stroke="url(#crRequest-blueEdge)" stroke-width="3" opacity="0.9" />
+  </g>
+
+  
+  <path d="M184 119 H205 M198 112 L205 119 L198 126" fill="none" stroke="#8AB4F8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.62" />
+</svg>
+<text x="900.0" y="2174" class="family">crRequest</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 512 512" role="img" aria-labelledby="crPhotos-title crPhotos-desc" x="232.0" y="2209">
+  <title id="crPhotos-title">crPhotos logo</title>
+  <desc id="crPhotos-desc">A four-blade camera aperture using Chrome colors, separated by rotationally symmetric cubic Bezier curves.</desc>
+
+  <defs>
+    <clipPath id="crPhotos-lens-clip">
+      <circle cx="256" cy="256" r="213" />
+    </clipPath>
+    <linearGradient id="crPhotos-red" x1="110" y1="95" x2="305" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F45B52" />
+      <stop offset="1" stop-color="#EA4335" />
+    </linearGradient>
+    <linearGradient id="crPhotos-yellow" x1="411" y1="101" x2="297" y2="286" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD866" />
+      <stop offset="1" stop-color="#FBBC04" />
+    </linearGradient>
+    <linearGradient id="crPhotos-green" x1="410" y1="401" x2="216" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18B96B" />
+      <stop offset="1" stop-color="#0F9D58" />
+    </linearGradient>
+    <linearGradient id="crPhotos-blue" x1="86" y1="385" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5F92E8" />
+      <stop offset="1" stop-color="#4285F4" />
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#crPhotos-lens-clip)">
+    <g transform="translate(256 256) scale(1.054455) translate(-256 -256)">
+    
+    <path d="M78 161 A202 202 0 0 1 351 78 C325 150 256 132 256 186.86 L255.49 190.78 L252.13 201.48 L244.14 216.32 L231.56 231.56 L216.32 244.14 L201.48 252.13 L190.78 255.49 L186.86 256 C132 256 150 187 78 161 Z" fill="url(#crPhotos-red)" />
+    <path d="M351 78 A202 202 0 0 1 434 351 C362 325 380 256 325.14 256 L321.22 255.49 L310.52 252.13 L295.68 244.14 L280.44 231.56 L267.86 216.32 L259.87 201.48 L256.51 190.78 L256 186.86 C256 132 325 150 351 78 Z" fill="url(#crPhotos-yellow)" />
+    <path d="M434 351 A202 202 0 0 1 161 434 C187 362 256 380 256 325.14 L256.51 321.22 L259.87 310.52 L267.86 295.68 L280.44 280.44 L295.68 267.86 L310.52 259.87 L321.22 256.51 L325.14 256 C380 256 362 325 434 351 Z" fill="url(#crPhotos-green)" />
+    <path d="M161 434 A202 202 0 0 1 78 161 C150 187 132 256 186.86 256 L190.78 256.51 L201.48 259.87 L216.32 267.86 L231.56 280.44 L244.14 295.68 L252.13 310.52 L255.49 321.22 L256 325.14 C256 380 187 362 161 434 Z" fill="url(#crPhotos-blue)" />
+
+    
+    
+    <g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="butt" stroke-linejoin="round">
+      <path d="M256 186.86 C256 132 325 150 351 78" />
+      <path d="M325.14 256 C380 256 362 325 434 351" />
+      <path d="M256 325.14 C256 380 187 362 161 434" />
+      <path d="M186.86 256 C132 256 150 187 78 161" />
+    </g>
+    </g>
+  </g>
+
+  
+  
+  <circle cx="256" cy="256" r="36" fill="#FFFFFF" />
+  <path d="M256.00 207.40 L256.05 208.10 L256.36 210.15 L257.19 213.41 L258.72 217.67 L261.09 222.66 L264.33 228.06 L268.41 233.55 L273.18 238.82 L278.45 243.59 L283.94 247.67 L289.34 250.91 L294.33 253.28 L298.59 254.81 L301.85 255.64 L303.90 255.95 L304.60 256.00 L303.90 256.05 L301.85 256.36 L298.59 257.19 L294.33 258.72 L289.34 261.09 L283.94 264.33 L278.45 268.41 L273.18 273.18 L268.41 278.45 L264.33 283.94 L261.09 289.34 L258.72 294.33 L257.19 298.59 L256.36 301.85 L256.05 303.90 L256.00 304.60 L255.95 303.90 L255.64 301.85 L254.81 298.59 L253.28 294.33 L250.91 289.34 L247.67 283.94 L243.59 278.45 L238.82 273.18 L233.55 268.41 L228.06 264.33 L222.66 261.09 L217.67 258.72 L213.41 257.19 L210.15 256.36 L208.10 256.05 L207.40 256.00 L208.10 255.95 L210.15 255.64 L213.41 254.81 L217.67 253.28 L222.66 250.91 L228.06 247.67 L233.55 243.59 L238.82 238.82 L243.59 233.55 L247.67 228.06 L250.91 222.66 L253.28 217.67 L254.81 213.41 L255.64 210.15 L255.95 208.10 Z" transform="translate(256 256) scale(1.5) translate(-256 -256)" fill="#FFFFFF" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="7.73" stroke-linejoin="round" />
+
+  
+  <path d="M105 156 A188 188 0 0 1 322 77" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" opacity="0.28" />
+</svg>
+<text x="270.0" y="2311" class="family">crPhotos</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 512 512" fill="none" x="412.0" y="2209">
+  <title>crDesk — Remote Control</title>
+  <desc>A large blue desktop outline with a transparent screen, three diagonal reflection strokes, and a remote cursor filled with a smooth red, yellow and green gradient.</desc>
+  <defs>
+    <linearGradient id="crDesk-signal" x1="44" y1="76" x2="468" y2="438" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B9AFF" /><stop offset="0.45" stop-color="#4285F4" /><stop offset="1" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="crDesk-chromeFrame" x1="44" y1="76" x2="468" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA4335" />
+      <stop offset="0.48" stop-color="#FBBC05" />
+      <stop offset="1" stop-color="#34A853" />
+    </linearGradient>
+    <linearGradient id="crDesk-pointerGloss" x1="330" y1="286" x2="445" y2="428" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#46505D" />
+      <stop offset="0.3" stop-color="#202833" />
+      <stop offset="1" stop-color="#080B10" />
+    </linearGradient>
+    <linearGradient id="crDesk-reflection" x1="174" y1="168" x2="336" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EC5FF" /><stop offset="1" stop-color="#4285F4" />
+    </linearGradient>
+    <linearGradient id="crDesk-pointerFill" x1="330" y1="286" x2="430" y2="427" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA4335" />
+      <stop offset="0.48" stop-color="#FBBC05" />
+      <stop offset="1" stop-color="#34A853" />
+    </linearGradient>
+  </defs>
+  
+  <path d="M256 372V431M194 438H318" stroke="url(#crDesk-chromeFrame)" stroke-width="22" stroke-linecap="round" />
+  <rect x="44" y="76" width="424" height="296" rx="28" fill="none" stroke="url(#crDesk-chromeFrame)" stroke-width="24" />
+  
+  <path d="M174 248L210 185M224 280L288 168M300 248L336 185" stroke="url(#crDesk-reflection)" stroke-width="16" stroke-linecap="round" opacity="0.8" />
+  
+  <path d="M330 286L354 414L382 385L411 426Q415 433 422 428L443 413Q450 409 445 402L408 353L451 339Z" fill="url(#crDesk-pointerGloss)" stroke="#EEF8FF" stroke-width="6" stroke-linejoin="round" />
+  <path d="M338 300L357 397L379 374" fill="none" stroke="#E7EDF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" />
+</svg>
+<text x="450.0" y="2311" class="family">crDesk</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 512 512" role="img" aria-labelledby="crPlayer-title crPlayer-desc" x="592.0" y="2209">
+<title id="crPlayer-title">Player icon</title>
+<desc id="crPlayer-desc">Three seamless curved regions with rich red, gold and blue gradients surround a white play triangle.</desc>
+<defs>
+<clipPath id="crPlayer-disc"><circle cx="256" cy="256" r="213" /></clipPath>
+<linearGradient id="crPlayer-red" x1="94" y1="105" x2="280" y2="344" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF8970" /><stop offset="0.5" stop-color="#F24B42" /><stop offset="1" stop-color="#C9253C" /></linearGradient>
+<linearGradient id="crPlayer-yellow" x1="322" y1="79" x2="430" y2="389" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE88B" /><stop offset="0.5" stop-color="#FFCA28" /><stop offset="1" stop-color="#F49B0B" /></linearGradient>
+<linearGradient id="crPlayer-blue" x1="135" y1="309" x2="339" y2="466" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#85B7FF" /><stop offset="0.5" stop-color="#4285F4" /><stop offset="1" stop-color="#2558C9" /></linearGradient>
+</defs>
+<g clip-path="url(#crPlayer-disc)">
+<circle cx="256" cy="256" r="213" fill="url(#crPlayer-blue)" />
+<path d="M356.000 256.000 C413.000 256.000 386.000 367.000 418.635 418.635 A230 230 0 0 1 33.837 315.528 C94.871 313.083 177.500 391.966 206.000 342.603 L256 256Z" fill="url(#crPlayer-blue)" />
+<path d="M206.000 342.603 C177.500 391.966 94.871 313.083 33.837 315.528 A230 230 0 0 1 315.528 33.837 C287.129 87.917 177.500 120.034 206.000 169.397 L256 256Z" fill="url(#crPlayer-red)" />
+<path d="M206.000 169.397 C177.500 120.034 287.129 87.917 315.528 33.837 A230 230 0 0 1 418.635 418.635 C386.000 367.000 413.000 256.000 356.000 256.000 L256 256Z" fill="url(#crPlayer-yellow)" />
+<g fill="none" stroke="#FFFFFF" stroke-width="11.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M356.000 256.000 L206.000 342.603 L206.000 169.397Z" fill="#FFFFFF" />
+</g>
+</g>
+</svg>
+<text x="630.0" y="2311" class="family">crPlayer</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="crYGet-title crYGet-desc" x="772.0" y="2209">
+  <title id="crYGet-title">crYGet</title>
+  <desc id="crYGet-desc">Chrome red, yellow and green regions divided by white cubic Bezier curves of uniform 3px width extending from the play triangle corners, with the original download badge.</desc>
+  <defs>
+    <linearGradient id="crYGet-tearRed" x1="459" y1="231" x2="224" y2="408" gradientUnits="userSpaceOnUse"><stop stop-color="#FF695D" /><stop offset="1" stop-color="#EA4335" /></linearGradient>
+    <linearGradient id="crYGet-tearYellow" x1="177" y1="94" x2="320" y2="255" gradientUnits="userSpaceOnUse"><stop stop-color="#FFDF66" /><stop offset="1" stop-color="#FBBC05" /></linearGradient>
+    <linearGradient id="crYGet-tearGreen" x1="52" y1="166" x2="222" y2="359" gradientUnits="userSpaceOnUse"><stop stop-color="#59C77A" /><stop offset="1" stop-color="#34A853" /></linearGradient>
+    <linearGradient id="crYGet-chromeRed" x1="338" y1="322" x2="437" y2="358" gradientUnits="userSpaceOnUse"><stop stop-color="#FF7D73" /><stop offset="1" stop-color="#EA4335" /></linearGradient>
+    <linearGradient id="crYGet-chromeYellow" x1="453" y1="353" x2="406" y2="449" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE17B" /><stop offset="1" stop-color="#FBBC05" /></linearGradient>
+    <linearGradient id="crYGet-chromeGreen" x1="338" y1="350" x2="387" y2="451" gradientUnits="userSpaceOnUse"><stop stop-color="#83CF97" /><stop offset="1" stop-color="#34A853" /></linearGradient>
+    <linearGradient id="crYGet-chromeBlue" x1="375" y1="357" x2="408" y2="408" gradientUnits="userSpaceOnUse"><stop stop-color="#79B1FF" /><stop offset="1" stop-color="#4285F4" /></linearGradient>
+    <clipPath id="crYGet-video">
+      <path d="M256 88C322 88 390 90 428 98C451 103 465 117 470 140C477 174 480 210 480 248C480 286 477 322 470 356C465 379 451 393 428 398C390 406 322 408 256 408C190 408 122 406 84 398C61 393 47 379 42 356C35 322 32 286 32 248C32 210 35 174 42 140C47 117 61 103 84 98C122 90 190 88 256 88Z" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#crYGet-video)">
+    <path fill="url(#crYGet-tearGreen)" d="M0 50H520V450H0Z" />
+    <path fill="url(#crYGet-tearYellow)" d="M216 182C100 194 162 126 38 88L38 50H520V88L474 88C336 118 453 236 323 247Z" />
+    <path fill="url(#crYGet-tearRed)" d="M323 247C453 236 336 118 474 88L520 88V450H38V410C112 368 218 349 216 313Z" />
+    <g fill="none" stroke="white" stroke-width="3" stroke-linecap="round">
+      <path d="M216 182C100 194 162 126 38 88" />
+      <path d="M323 247C453 236 336 118 474 88" />
+      <path d="M216 313C218 349 112 368 38 410" />
+    </g>
+  </g>
+  <path fill="white" d="M211 187C211 181 217 178 222 181L316 236C325 241 325 253 316 258L222 313C217 316 211 313 211 307V187Z" />
+  <circle cx="390" cy="382" r="77" fill="white" />
+  <path d="M323.316 343.500A77 77 0 0 1 456.684 343.500L448.890 348.000A68 68 0 0 0 331.110 348.000Z" fill="url(#crYGet-chromeRed)" />
+  <path d="M456.684 343.500A77 77 0 0 1 390.000 459.000L390.000 450.000A68 68 0 0 0 448.890 348.000Z" fill="url(#crYGet-chromeYellow)" />
+  <path d="M390.000 459.000A77 77 0 0 1 323.316 343.500L331.110 348.000A68 68 0 0 0 390.000 450.000Z" fill="url(#crYGet-chromeGreen)" />
+  <circle cx="390" cy="382" r="68" fill="white" />
+  <path d="M390 359V390M373 377L390 394L407 377M373 405H407" stroke="url(#crYGet-chromeBlue)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<text x="810.0" y="2311" class="family">crYGet</text>
+  <path d="M76 2342h25m-25 0v-25M1004 2342h-25m25 0v-25" fill="none" stroke="#4c798e"/>
+</svg>
