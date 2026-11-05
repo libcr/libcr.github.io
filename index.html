@@ -12,7 +12,7 @@
     <link rel="icon" href="assets/libcr-logo.svg" type="image/svg+xml" />
     <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/fonts/google-sans-code-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="styles.css?v=94be4da25baf" />
+    <link rel="stylesheet" href="styles.css?v=665b491b36b7" />
     <script src="script.js?v=6b974bb843fb" defer></script>
   </head>
   <body>
@@ -43,7 +43,108 @@
         </div>
         <figure class="hero-poster reveal">
           <div class="poster-frame">
-            <img src="assets/libcr-poster.svg" alt="libcr — Chromium + AI" width="1200" height="1000" fetchpriority="high" />
+            <svg class="hero-poster-art" xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="hero-poster-title hero-poster-desc">
+  <title id="hero-poster-title">libcr — Beyond Qt. Faster than Electron.</title>
+  <desc id="hero-poster-desc">A dark, futuristic poster for libcr featuring Chrome-inspired red, yellow, green and blue light trails.</desc>
+  <defs>
+    <linearGradient id="hero-poster-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07090d"/>
+      <stop offset="0.52" stop-color="#0b1018"/>
+      <stop offset="1" stop-color="#05070a"/>
+    </linearGradient>
+    <radialGradient id="hero-poster-blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#4285f4" stop-opacity=".42"/>
+      <stop offset=".46" stop-color="#4285f4" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#4285f4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hero-poster-chromeLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ea4335"/>
+      <stop offset=".34" stop-color="#fbbc05"/>
+      <stop offset=".67" stop-color="#34a853"/>
+      <stop offset="1" stop-color="#4285f4"/>
+    </linearGradient>
+    <linearGradient id="hero-poster-chromeText" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ea4335"/>
+      <stop offset=".46" stop-color="#fbbc05"/>
+      <stop offset="1" stop-color="#34a853"/>
+    </linearGradient>
+    <linearGradient id="hero-poster-redYellow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ea4335"/>
+      <stop offset="1" stop-color="#fbbc05"/>
+    </linearGradient>
+    <linearGradient id="hero-poster-yellowGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbc05"/>
+      <stop offset="1" stop-color="#34a853"/>
+    </linearGradient>
+    <linearGradient id="hero-poster-greenBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34a853"/>
+      <stop offset="1" stop-color="#4285f4"/>
+    </linearGradient>
+    <filter id="hero-poster-softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="hero-poster-lineGlow" x="-30%" y="-100%" width="160%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="hero-poster-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#fff" stroke-opacity=".028" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="1000" fill="url(#hero-poster-bg)"/>
+  <rect width="1200" height="1000" fill="url(#hero-poster-grid)"/>
+  <ellipse cx="810" cy="430" rx="470" ry="470" fill="url(#hero-poster-blueGlow)"/>
+
+  <!-- Technical header -->
+  <g font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif">
+    <text x="1108" y="104" fill="#8993a4" font-size="14" font-weight="600" text-anchor="end" letter-spacing="3">NATIVE UI · V8 · CHROMIUM</text>
+    <line x1="92" y1="138" x2="1108" y2="138" stroke="#fff" stroke-opacity=".09"/>
+  </g>
+
+  <!-- Chrome-inspired orbital C -->
+  <g>
+    <circle cx="810" cy="415" r="245" fill="none" stroke="#fff" stroke-opacity=".04" stroke-width="66"/>
+    <path d="M620 260A245 245 0 0 1 930 215" fill="none" stroke="#ea4335" stroke-width="34" stroke-linecap="round" filter="url(#hero-poster-softGlow)"/>
+    <path d="M930 215A245 245 0 0 1 1050 410" fill="none" stroke="#fbbc05" stroke-width="34" stroke-linecap="round" filter="url(#hero-poster-softGlow)"/>
+    <path d="M1050 410A245 245 0 0 1 935 625" fill="none" stroke="#34a853" stroke-width="34" stroke-linecap="round" filter="url(#hero-poster-softGlow)"/>
+    <path d="M935 625A245 245 0 0 1 620 575" fill="none" stroke="#4285f4" stroke-width="34" stroke-linecap="round" filter="url(#hero-poster-softGlow)"/>
+
+    <g class="hero-core-hotspot">
+      <circle class="hero-core-hit-area" cx="810" cy="415" r="128" fill="transparent" />
+      <g class="hero-core-art">
+    <!-- AI compute core -->
+    <circle cx="810" cy="415" r="118" fill="#07101f" stroke="#4285f4" stroke-opacity=".9" stroke-width="3"/>
+    <circle cx="810" cy="415" r="96" fill="#0b1d3d" stroke="#75a7fa" stroke-opacity=".45" stroke-width="2" filter="url(#hero-poster-softGlow)"/>
+    <path d="M810 332L882 373V457L810 498L738 457V373Z" fill="#4285f4" fill-opacity=".15" stroke="#73a6fa" stroke-width="2"/>
+    <path d="M762 379H735L719 363M858 379H885L901 363M762 451H735L719 467M858 451H885L901 467M810 344V321M810 486V509" fill="none" stroke="#8bb5fb" stroke-width="3" stroke-linecap="round"/>
+    <g fill="#dbe9ff" filter="url(#hero-poster-lineGlow)">
+      <circle cx="719" cy="363" r="5"/><circle cx="901" cy="363" r="5"/>
+      <circle cx="719" cy="467" r="5"/><circle cx="901" cy="467" r="5"/>
+      <circle cx="810" cy="321" r="5"/><circle cx="810" cy="509" r="5"/>
+    </g>
+    <text x="810" y="445" fill="#f4f8ff" font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif" font-size="78" font-weight="780" text-anchor="middle" letter-spacing="-5">AI</text>
+    <text x="810" y="471" fill="#8fb8fb" font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="4">INTELLIGENCE CORE</text>
+
+      </g>
+    </g>
+
+    <path d="M620 575L810 415L1050 410" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="2"/>
+    <circle cx="620" cy="260" r="6" fill="#fff"/>
+    <circle cx="1050" cy="410" r="6" fill="#fff"/>
+    <circle cx="620" cy="575" r="6" fill="#fff"/>
+  </g>
+
+  <!-- Main message -->
+  <g font-family="Inter, 'Google Sans', 'Segoe UI', Arial, sans-serif">
+    <text x="92" y="607" fill="url(#hero-poster-chromeText)" font-size="136" font-weight="760" letter-spacing="-5">libcr</text>
+    <rect x="394" y="565" width="66" height="22" rx="11" fill="#4285f4"/>
+    <text x="92" y="715" fill="#f5f7fa" font-size="104" font-weight="760" letter-spacing="-5">Beyond Qt</text>
+    <text x="92" y="825" fill="#f5f7fa" font-size="104" font-weight="760" letter-spacing="-5">Faster than</text>
+    <text x="92" y="935" fill="#f5f7fa" font-size="104" font-weight="760" letter-spacing="-5">Electron</text>
+  </g>
+</svg>
           </div>
         </figure>
       </section>
@@ -56,7 +157,61 @@
         <div class="product-grid">
           <article class="product-card product-featured product-photos reveal" data-importance="6" style="--importance:6">
             <div class="poster-hotspots" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1000 1080 780"><g class="poster-hotspot" transform="translate(792 1187)"><rect class="poster-hit-area" width="176" height="136" rx="18" fill="transparent" /><g class="poster-highlight"><g fill="none" stroke="#87b6ff" stroke-width="2.3" stroke-linecap="round">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1000 1080 780"><defs><linearGradient id="photos-central-aurora" x2=".8" y2="1">
+      <stop stop-color="#69f0cf" stop-opacity=".02" /><stop offset=".45" stop-color="#69f0cf" stop-opacity=".5" /><stop offset="1" stop-color="#6194ed" stop-opacity=".02" />
+    </linearGradient>
+    <linearGradient id="photos-central-edge" x2="1" y2=".6">
+      <stop stop-color="#b0fff2" /><stop offset=".45" stop-color="#50ded5" /><stop offset="1" stop-color="#4588e2" stop-opacity=".3" />
+    </linearGradient>
+    <linearGradient id="photos-central-gallery-sky" x1="0" y1="0" x2=".4" y2="1">
+      <stop stop-color="#14244b" /><stop offset=".55" stop-color="#315e85" /><stop offset="1" stop-color="#78aeb0" />
+    </linearGradient>
+    <linearGradient id="photos-central-lake" x2="0" y2="1">
+      <stop stop-color="#568b9f" /><stop offset="1" stop-color="#142d4a" />
+    </linearGradient>
+    <linearGradient id="photos-central-portrait-sky" x2="1" y2="1">
+      <stop stop-color="#446b85" /><stop offset="1" stop-color="#192844" />
+    </linearGradient>
+    <linearGradient id="photos-central-sunset-sky" x2=".3" y2="1">
+      <stop stop-color="#30315b" /><stop offset=".5" stop-color="#976783" /><stop offset="1" stop-color="#e8b889" />
+    </linearGradient>
+    </defs><g class="poster-hotspot poster-central-hotspot"><rect class="poster-hit-area" x="316" y="1220" width="448" height="382" rx="22" fill="transparent" /><g class="poster-highlight">
+  <rect x="316" y="1220" width="448" height="382" rx="22" fill="#0c1f32" stroke="url(#photos-central-edge)" stroke-width="2" />
+  <path d="M339 1244h102" stroke="#7ee9da" stroke-opacity=".65" stroke-width="2" />
+  <circle cx="712" cy="1244" r="3" fill="#78e8ca" /><circle cx="727" cy="1244" r="3" fill="#78e8ca" opacity=".4" />
+  <svg x="334" y="1261" width="243" height="277" viewBox="0 0 243 277">
+    <rect width="243" height="277" rx="9" fill="url(#photos-central-gallery-sky)" />
+    <circle cx="179" cy="48" r="21" fill="#dce6d7" />
+    <path d="M0 69C56 8 135 103 243 22V65C133 140 65 45 0 116Z" fill="url(#photos-central-aurora)" />
+    <g fill="#cae9f3" opacity=".75">
+      <circle cx="28" cy="27" r="1.4" /><circle cx="79" cy="49" r="1" /><circle cx="131" cy="20" r="1.3" /><circle cx="212" cy="88" r="1" />
+    </g>
+    <path d="M0 174L38 124 68 149 127 61 191 151 219 129 243 161V218H0Z" fill="#3a6982" />
+    <path d="M88 119L127 61 170 121 141 105 128 85 116 105 103 101Z" fill="#c0dfdf" />
+    <path d="M127 85L156 162 191 151 170 121 141 105Z" fill="#6791a6" />
+    <path d="M0 185L61 163 98 181 154 157 205 180 243 170V227H0Z" fill="#1b435a" />
+    <path d="M0 208Q125 186 243 208V277H0Z" fill="url(#photos-central-lake)" />
+    <path d="M77 219h104M57 231h139M83 244h83M108 257h43" stroke="#a2d8d5" stroke-opacity=".35" stroke-width="1.5" />
+    <path d="M0 258L33 245 62 252 92 277H0ZM198 277l27-32 18 5v27Z" fill="#102b40" />
+  </svg>
+  <svg x="589" y="1261" width="157" height="139" viewBox="0 0 157 139">
+    <rect width="157" height="139" rx="9" fill="url(#photos-central-portrait-sky)" />
+    <circle cx="126" cy="24" r="33" fill="#9cbbbc" opacity=".13" />
+    <path d="M22 139c1-64 112-64 113 0" fill="#163549" />
+    <path d="M63 83h29v23c-8 12-21 12-29 0Z" fill="#bb9691" />
+    <ellipse cx="77" cy="62" rx="27" ry="33" fill="#d6b3a2" />
+    <path d="M49 64c-8-58 67-59 57-2L93 46 70 40 54 65Z" fill="#172b3f" />
+    <path d="M48 32H37v13M106 32h11v13M37 85v13h11M106 98h11V85" fill="none" stroke="#8df4d4" stroke-width="1.7" />
+  </svg>
+  <svg x="589" y="1412" width="157" height="126" viewBox="0 0 157 126">
+    <rect width="157" height="126" rx="9" fill="url(#photos-central-sunset-sky)" />
+    <circle cx="112" cy="36" r="18" fill="#f2bd8d" />
+    <path d="M0 126V69h21V48h25v43h18V57h18V30h21v48h15V63h19v24h20v39Z" fill="#27354e" />
+    <path d="M8 126V91h25V75h22v29h21V92h27v15h19V89h23v37Z" fill="#172b42" />
+    <path d="M28 58h9M28 69h9M87 43h10M87 55h10M87 67h10M124 75h7M39 88h9" stroke="#e6ba92" stroke-opacity=".6" stroke-width="2" />
+  </svg>
+  <text x="540" y="1576" text-anchor="middle" style="fill:#99ccda;font-size:14px" font-family="'DejaVu Sans Mono',monospace" fill="#78a4b6" font-size="16" letter-spacing="2">YOUR MOMENTS, IN FOCUS</text>
+  </g></g><g class="poster-hotspot" transform="translate(792 1187)"><rect class="poster-hit-area" width="176" height="136" rx="18" fill="transparent" /><g class="poster-highlight"><g fill="none" stroke="#87b6ff" stroke-width="2.3" stroke-linecap="round">
       <path d="M25 35V24h12M59 24h12v11M25 59v11h12M59 70h12V59M36 36h24M48 36v24M40 60h16" />
       <path d="M91 35h52M91 49h41M91 63h48" stroke-opacity=".5" />
     </g>
@@ -68,17 +223,12 @@
       <circle cx="73" cy="53" r="3" fill="#102438" />
     </g>
     <text x="23" y="112" font-size="22" fill="#eff8ff" font-family="'DejaVu Sans',Arial,sans-serif">QuickShare</text>
-  </g></g><g class="poster-hotspot" transform="translate(102 1530)">
-                  <rect class="poster-hit-area" width="184" height="130" rx="18" fill="transparent" />
-                  <g class="poster-highlight">
-                    <g fill="none" stroke="#eac576" stroke-width="2.2" stroke-linejoin="round">
-                      <path d="M25 37h11l5-11h22l5 11h11v38H25Z" />
-                      <circle cx="52" cy="55" r="12" />
-                      <circle cx="72" cy="45" r="2" fill="#eac576" stroke="none" />
-                    </g>
-                    <text x="23" y="108" font-size="19" letter-spacing="2" font-family="'DejaVu Sans',Arial,sans-serif" fill="#eff8ff">CAMERA</text>
-                  </g>
-                </g></svg>
+  </g></g><g class="poster-hotspot" transform="translate(102 1530)"><rect class="poster-hit-area" width="184" height="130" rx="18" fill="transparent" /><g class="poster-highlight"><g fill="none" stroke="#eac576" stroke-width="2.2" stroke-linejoin="round">
+      <path d="M25 37h11l5-11h22l5 11h11v38H25Z" />
+      <circle cx="52" cy="55" r="12" /><circle cx="72" cy="45" r="2" fill="#eac576" stroke="none" />
+    </g>
+    <text x="23" y="108" font-size="19" letter-spacing="2" font-family="'DejaVu Sans',Arial,sans-serif" fill="#eff8ff">CAMERA</text>
+  </g></g></svg>
             </div>
             <div class="product-number">01</div>
             <div class="product-body"><div class="product-header"><img src="assets/apps/crPhotos.svg" alt="crPhotos icon" width="64" height="64" loading="lazy" decoding="async" /><div class="product-title"><h3>crPhotos</h3><span data-zh="照片与视频" data-en="Photos &amp; videos">照片与视频</span></div></div>
@@ -89,27 +239,44 @@
           </article>
           <article class="product-card product-files reveal" data-importance="5" style="--importance:5">
             <div class="poster-hotspots" aria-hidden="true">
-              <svg viewBox="0 0 1080 2400" xmlns="http://www.w3.org/2000/svg">
-                <g class="poster-hotspot" transform="translate(792 1187)">
-                  <rect class="poster-hit-area" width="176" height="136" rx="18" fill="transparent" />
-                  <g class="poster-highlight">
-                    <rect x="24" y="24" width="48" height="40" rx="5" fill="none" stroke="#87b6ff" stroke-width="2" />
-                    <circle cx="58" cy="35" r="4" fill="#87b6ff" />
-                    <path d="M26 57l14-16 16 18 8-9 8 9" fill="none" stroke="#87b6ff" stroke-width="2" />
-                    <text x="23" y="103" font-size="19" letter-spacing="2" font-family="'DejaVu Sans',Arial,sans-serif" fill="#eff8ff">PREVIEW</text>
-                  </g>
-                </g>
-                <g class="poster-hotspot" transform="translate(783 1528)">
-                  <rect class="poster-hit-area" width="195" height="148" rx="18" fill="transparent" />
-                  <g class="poster-highlight">
-                    <path d="M36 38L28 24M78 38L86 24" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round" />
-                    <path d="M23 69C23 20 91 20 91 69Z" fill="#3ddc84" />
-                    <circle cx="41" cy="53" r="3" fill="#102438" />
-                    <circle cx="73" cy="53" r="3" fill="#102438" />
-                    <text x="23" y="112" font-size="22" font-family="'DejaVu Sans',Arial,sans-serif" fill="#eff8ff">QuickShare</text>
-                  </g>
-                </g>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 2400">
+                <defs><linearGradient id="files-central-edge" x2="1" y2=".6">
+      <stop stop-color="#b0fff2" /><stop offset=".45" stop-color="#50ded5" /><stop offset="1" stop-color="#4588e2" stop-opacity=".3" />
+    </linearGradient>
+    <linearGradient id="files-central-folder-back" x2=".4" y2="1">
+      <stop stop-color="#164b60" /><stop offset="1" stop-color="#0c2238" />
+    </linearGradient>
+    <linearGradient id="files-central-folder-front" x2=".85" y2="1">
+      <stop stop-color="#226a7a" stop-opacity=".96" /><stop offset=".45" stop-color="#123d52" stop-opacity=".97" /><stop offset="1" stop-color="#0b2038" />
+    </linearGradient>
+    <filter id="files-central-glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+    </defs><g class="poster-hotspot poster-central-hotspot"><path class="poster-hit-area" d="M325 1281v-39q0-22 22-22h108l35 38h227q25 0 25 25v236H325Z M298 1312q-4-22 21-22h435q24 0 19 25l-37 239q-3 21-26 21H357q-23 0-26-22Z" fill="transparent" /><g class="poster-highlight">
+  <path d="M325 1281v-39q0-22 22-22h108l35 38h227q25 0 25 25v236H325Z" fill="url(#files-central-folder-back)" stroke="#6bcbbf" stroke-width="2" />
+  <path d="M298 1312q-4-22 21-22h435q24 0 19 25l-37 239q-3 21-26 21H357q-23 0-26-22Z" fill="url(#files-central-folder-front)" stroke="url(#files-central-edge)" stroke-width="2" />
+  <path d="M319 1294h435" stroke="#a5fff1" stroke-width="2" />
+  <path d="M345 1520h376" stroke="#69ffe0" stroke-width="2" opacity=".5" filter="url(#files-central-glow)" />
+  <path d="M345 1520h376" stroke="#69ffe0" stroke-width="1" opacity=".5" />
+  <g transform="translate(489 1360)" fill="none" stroke="#a3ffea" stroke-width="2.5" stroke-linecap="round">
+    <rect width="103" height="91" rx="16" stroke-opacity=".3" />
+    <path d="M28 29h47M28 46h47M28 63h30" />
+    <circle cx="77" cy="64" r="3" fill="#a3ffea" stroke="none" />
+  </g>
+  <text x="540" y="1500" text-anchor="middle" fill="#78a4b6" font-family="'DejaVu Sans Mono',monospace" font-size="16" letter-spacing="2">YOUR FILES, CONNECTED</text>
+
+  </g></g><g class="poster-hotspot" transform="translate(792 1187)"><rect class="poster-hit-area" width="176" height="136" rx="18" fill="transparent" /><g class="poster-highlight"><rect x="24" y="24" width="48" height="40" rx="5" fill="none" stroke="#87b6ff" stroke-width="2" />
+    <circle cx="58" cy="35" r="4" fill="#87b6ff" />
+    <path d="M26 57l14-16 16 18 8-9 8 9" fill="none" stroke="#87b6ff" stroke-width="2" />
+    <text x="23" y="103" font-size="19" letter-spacing="2" font-family="'DejaVu Sans',Arial,sans-serif" fill="#eff8ff">PREVIEW</text>
+  </g></g><g class="poster-hotspot" transform="translate(783 1528)"><rect class="poster-hit-area" width="195" height="148" rx="18" fill="transparent" /><g class="poster-highlight"><g aria-label="Android">
+      <path d="M36 38L28 24M78 38L86 24" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round" />
+      <path d="M23 69C23 20 91 20 91 69Z" fill="#3ddc84" />
+      <circle cx="41" cy="53" r="3" fill="#102438" />
+      <circle cx="73" cy="53" r="3" fill="#102438" />
+    </g>
+    <text x="23" y="112" font-size="22" fill="#eff8ff" font-family="'DejaVu Sans',Arial,sans-serif">QuickShare</text>
+  </g></g></svg>
             </div>
             <div class="product-number">02</div>
             <div class="product-body"><div class="product-header"><img src="assets/apps/crFiles.svg" alt="crFiles icon" width="64" height="64" loading="lazy" decoding="async" /><div class="product-title"><h3>crFiles</h3><span data-zh="文件管理" data-en="File manager">文件管理</span></div></div>
@@ -120,18 +287,66 @@
           </article>
           <article class="product-card product-player reveal" data-importance="4" style="--importance:4">
             <div class="poster-hotspots" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 2400"><g class="poster-hotspot" transform="translate(792 1187)"><rect class="poster-hit-area" width="176" height="136" rx="18" fill="transparent" /><g class="poster-highlight"><g fill="none" stroke="#87b6ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 2400"><defs><linearGradient id="player-central-cinema-sky" x2=".25" y2="1">
+      <stop stop-color="#111c39" /><stop offset=".48" stop-color="#354466" /><stop offset=".8" stop-color="#a57a87" /><stop offset="1" stop-color="#e1b18f" />
+    </linearGradient>
+    <radialGradient id="player-central-horizon-glow">
+      <stop stop-color="#f8cb9b" stop-opacity=".55" /><stop offset="1" stop-color="#d4a1ad" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="player-central-planet" x2=".8" y2="1">
+      <stop stop-color="#f5d4b0" /><stop offset=".5" stop-color="#bc8c97" /><stop offset="1" stop-color="#4e526f" />
+    </linearGradient>
+    <linearGradient id="player-central-screen-rim" x2="1" y2=".8">
+      <stop stop-color="#a4e2ee" /><stop offset=".5" stop-color="#5b9cbd" /><stop offset="1" stop-color="#4677bf" stop-opacity=".4" />
+    </linearGradient>
+    <linearGradient id="player-central-sea" x2="0" y2="1">
+      <stop stop-color="#50738b" /><stop offset="1" stop-color="#14273e" />
+    </linearGradient>
+    </defs><g class="poster-hotspot poster-central-hotspot"><rect class="poster-hit-area" x="302" y="1220" width="476" height="354" rx="22" fill="transparent" /><g class="poster-highlight">
+  <rect x="302" y="1220" width="476" height="354" rx="22" fill="#0c1c30" stroke="url(#player-central-screen-rim)" stroke-width="2" />
+  <path d="M326 1238h62" stroke="#8bdce8" stroke-opacity=".7" stroke-width="2" />
+  <circle cx="730" cy="1238" r="3" fill="#7cf4dc" /><circle cx="745" cy="1238" r="3" fill="#7cf4dc" opacity=".4" />
+  <svg x="318" y="1252" width="444" height="249.75" viewBox="0 0 444 250">
+    <rect width="444" height="250" rx="8" fill="url(#player-central-cinema-sky)" />
+    <g fill="#d3e8f7" opacity=".65">
+      <circle cx="28" cy="39" r="1.2" /><circle cx="70" cy="20" r="1" /><circle cx="112" cy="57" r="1.5" />
+      <circle cx="179" cy="24" r="1" /><circle cx="218" cy="52" r="1.4" /><circle cx="358" cy="23" r="1" />
+      <circle cx="395" cy="66" r="1.2" /><circle cx="417" cy="30" r="1" />
+    </g>
+    <ellipse cx="283" cy="151" rx="175" ry="103" fill="url(#player-central-horizon-glow)" />
+    <circle cx="305" cy="78" r="48" fill="url(#player-central-planet)" />
+    <ellipse cx="305" cy="78" rx="77" ry="16" transform="rotate(-24 305 78)" fill="none" stroke="#eed0af" stroke-width="4" stroke-opacity=".6" />
+    <path d="M0 191L58 125 99 157 142 106 198 171 232 147 288 189 354 157 395 180 444 154V250H0Z" fill="#334760" />
+    <path d="M0 211L57 177 93 193 144 156 195 194 242 184 295 210 359 179 405 203 444 193V250H0Z" fill="#20394f" />
+    <path d="M0 230Q180 184 444 223V250H0Z" fill="url(#player-central-sea)" />
+    <path d="M261 222h91M226 231h148M276 240h57" stroke="#d6b8b1" stroke-width="1.2" stroke-opacity=".4" />
+  </svg>
+  <circle cx="540" cy="1377" r="49" fill="#091c31" fill-opacity=".5" stroke="#d9f3ff" stroke-opacity=".65" stroke-width="1.5" />
+  <circle cx="540" cy="1377" r="59" fill="none" stroke="#bceeff" stroke-opacity=".15" />
+  <path d="M529 1355L562 1377 529 1399Z" fill="#f0faff" stroke="#f0faff" stroke-width="3" stroke-linejoin="round" />
+
+
+  <path d="M328 1520H752" stroke="#29465f" stroke-width="3" stroke-linecap="round" />
+  <path d="M328 1520H532" stroke="#7ae8df" stroke-width="3" stroke-linecap="round" />
+  <circle cx="532" cy="1520" r="4" fill="#b5fff0" />
+  <g stroke="#b3d4e3" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M331 1540v13M342 1540v13M367 1540l-9 6 9 6ZM391 1540l9 6-9 6Z" />
+    <path d="M680 1543h5l7-6v19l-7-6h-5ZM699 1540q7 7 0 13M735 1542v-5h-5M743 1537h5v5M748 1550v5h-5M735 1555h-5v-5" />
+  </g>
+  <text x="540" y="1552" text-anchor="middle" font-size="12" style="fill:#8faec3;letter-spacing:2px" font-family="'DejaVu Sans Mono',monospace" fill="#eff8ff">PRESS PLAY</text>
+
+  </g></g><g class="poster-hotspot" transform="translate(792 1187)"><rect class="poster-hit-area" width="176" height="136" rx="18" fill="transparent" /><g class="poster-highlight"><g fill="none" stroke="#87b6ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
       <rect x="24" y="24" width="65" height="49" rx="5" />
       <path d="M24 35h65M43 46l-8 8 8 8M70 46l8 8-8 8M60 43l-7 22M108 34h36M108 48h24M108 62h31" />
     </g>
-    <text x="23" y="108" style="letter-spacing:1px" font-family="'DejaVu Sans',Arial,sans-serif" font-size="19" fill="#eff8ff">H5 SKINS</text>
+    <text x="23" y="108" style="letter-spacing:1px" font-size="19" font-family="'DejaVu Sans',Arial,sans-serif" fill="#eff8ff">H5 SKINS</text>
   </g></g><g class="poster-hotspot" transform="translate(791 1528)"><rect class="poster-hit-area" width="187" height="148" rx="18" fill="transparent" /><g class="poster-highlight"><g fill="none" stroke="#9ae8c2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M34 28h43v32M27 36h43v32" stroke-opacity=".5" />
       <rect x="20" y="44" width="43" height="32" rx="4" />
       <path d="M23 69l10-10 8 8 7-5 12 11M96 51l19 12-19 12Z" />
       <circle cx="51" cy="53" r="3" fill="#9ae8c2" stroke="none" />
     </g>
-    <text x="18" y="115" style="font-size:18px;letter-spacing:1px" font-family="'DejaVu Sans',Arial,sans-serif" font-size="19" fill="#eff8ff">SLIDESHOW</text>
+    <text x="18" y="115" style="font-size:18px;letter-spacing:1px" font-size="19" font-family="'DejaVu Sans',Arial,sans-serif" fill="#eff8ff">SLIDESHOW</text>
   </g></g></svg>
             </div>
             <div class="product-number">03</div>

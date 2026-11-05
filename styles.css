@@ -41,6 +41,13 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 .hero-poster { width:min(41.58vw,571px); margin:0; justify-self:end; position:relative; z-index:1; transform:rotate(2deg); }
 .poster-frame { position:relative; padding:10px; background:#11141a; border:1px solid #333842; }
 .poster-frame img { display:block; width:100%; height:auto; background:#090b0f; }
+.hero-poster-art { display:block; width:100%; height:auto; background:#090b0f; }
+.hero-core-hit-area { pointer-events:all; }
+.hero-core-art { pointer-events:none; transform-box:view-box; transform-origin:810px 415px; transition:transform .25s ease; }
+@media (hover:hover) and (pointer:fine) {
+  .hero-core-hotspot:hover .hero-core-art { transform:scale(1.15); }
+}
+@media (prefers-reduced-motion:reduce) { .hero-core-art { transition:none; } }
 
 .section { padding:130px clamp(22px,7vw,120px); }
 .section-heading { display:grid; grid-template-columns:1.25fr .75fr; align-items:end; gap:22px 60px; margin-bottom:70px; }
@@ -97,11 +104,11 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 
 /* Match the background's 350% height and 58% vertical position exactly. */
 .poster-hotspots { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
-.poster-hotspots svg { position:absolute; height:350%; width:auto; max-width:none; aspect-ratio:1080 / 2400; left:50%; top:-145%; transform:translateX(-50%); overflow:visible; }
+.poster-hotspots > svg { position:absolute; height:350%; width:auto; max-width:none; aspect-ratio:1080 / 2400; left:50%; top:-145%; transform:translateX(-50%); overflow:visible; }
 /* Fit the photo illustration to the width, independently of card height. */
 :is(.product-photos,.product-share),
 :is(.product-photos,.product-share):hover { background-size:100% 100%,100% auto; }
-:is(.product-photos,.product-share) .poster-hotspots svg { width:100%; height:auto; aspect-ratio:1080 / 780; top:58%; transform:translate(-50%,-58%); }
+:is(.product-photos,.product-share) .poster-hotspots > svg { width:100%; height:auto; aspect-ratio:1080 / 780; top:58%; transform:translate(-50%,-58%); }
 .poster-hit-area { pointer-events:all; }
 .poster-highlight { opacity:0; pointer-events:none; transition:opacity .2s; }
 .poster-hotspot:hover .poster-highlight { opacity:1; }
