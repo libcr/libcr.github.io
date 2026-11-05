@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <title>crDesk — Remote Control</title>
+  <desc>A large blue desktop outline with a transparent screen, three diagonal reflection strokes, and a remote cursor filled with a smooth red, yellow and green gradient.</desc>
+  <defs>
+    <linearGradient id="signal" x1="44" y1="76" x2="468" y2="438" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B9AFF"/><stop offset="0.45" stop-color="#4285F4"/><stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="chromeFrame" x1="44" y1="76" x2="468" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA4335"/>
+      <stop offset="0.48" stop-color="#FBBC05"/>
+      <stop offset="1" stop-color="#34A853"/>
+    </linearGradient>
+    <linearGradient id="pointerGloss" x1="330" y1="286" x2="445" y2="428" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#46505D"/>
+      <stop offset="0.3" stop-color="#202833"/>
+      <stop offset="1" stop-color="#080B10"/>
+    </linearGradient>
+    <linearGradient id="reflection" x1="174" y1="168" x2="336" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EC5FF"/><stop offset="1" stop-color="#4285F4"/>
+    </linearGradient>
+    <linearGradient id="pointerFill" x1="330" y1="286" x2="430" y2="427" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA4335"/>
+      <stop offset="0.48" stop-color="#FBBC05"/>
+      <stop offset="1" stop-color="#34A853"/>
+    </linearGradient>
+  </defs>
+  <!-- A larger screen with less outer padding and a compact stand. -->
+  <path d="M256 372V431M194 438H318" stroke="url(#chromeFrame)" stroke-width="22" stroke-linecap="round"/>
+  <rect x="44" y="76" width="424" height="296" rx="28" fill="none" stroke="url(#chromeFrame)" stroke-width="24"/>
+  <!-- Three parallel reflections suggest glass while leaving the screen clear. -->
+  <path d="M174 248L210 185M224 280L288 168M300 248L336 185" stroke="url(#reflection)" stroke-width="16" stroke-linecap="round" opacity="0.8"/>
+  <!-- Keep the remote pointer separate from the reflections at small sizes. -->
+  <path d="M330 286L354 414L382 385L411 426Q415 433 422 428L443 413Q450 409 445 402L408 353L451 339Z" fill="url(#pointerGloss)" stroke="#EEF8FF" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M338 300L357 397L379 374" fill="none" stroke="#E7EDF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+</svg>
