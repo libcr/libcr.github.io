@@ -87,8 +87,13 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 .product-photos { --card-poster:url("assets/apps/crPhotos-1.9.7-background.svg"); }
 .product-player { --card-poster:url("assets/apps/crPlayer-1.3.6-poster.svg"); }
 .product-files { --card-poster:url("assets/apps/crFiles-1.6.8-poster.svg"); }
-:is(.product-player,.product-files,.product-photos,.product-share,.product-desk),
-:is(.product-player,.product-files,.product-photos,.product-share,.product-desk):hover {
+.product-quickshare { --card-poster:url("assets/apps/crQuickShare-poster.svg"); --quickshare-inset:33px; }
+/* Extend the link row to the card's full width, including padding and borders. */
+.product-quickshare .card-links { width:calc(100% + 2 * var(--quickshare-inset)); margin-left:calc(-1 * var(--quickshare-inset)); }
+.product-quickshare .card-links > a { margin-left:38.2%; }
+@media (max-width:980px) { .product-quickshare { --quickshare-inset:27px; } }
+:is(.product-player,.product-files,.product-quickshare,.product-photos,.product-share,.product-desk),
+:is(.product-player,.product-files,.product-quickshare,.product-photos,.product-share,.product-desk):hover {
   color:#f0f7ff;
   background-color:#081724;
   background-image:linear-gradient(180deg,rgba(5,15,26,.88),rgba(5,15,26,.65) 48%,rgba(5,15,26,.25) 72%,rgba(5,15,26,.9)),var(--card-poster);
@@ -96,12 +101,12 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
   background-position:center,center 58%;
   background-repeat:no-repeat;
 }
-:is(.product-player,.product-files,.product-photos,.product-share,.product-desk) .product-title span { color:#d0e1ec; border-color:#496173; background:rgba(8,23,36,.65); }
-:is(.product-player,.product-files,.product-photos,.product-share,.product-desk) .product-body > p { color:#e0eaf3; text-shadow:0 1px 3px #081724; }
-:is(.product-player,.product-files,.product-photos,.product-share,.product-desk) .tags span { color:#d9edf5; background:rgba(13,35,51,.9); }
-:is(.product-player,.product-files,.product-photos,.product-share,.product-desk) .product-number { color:#a9c1d2; }
-:is(.product-player,.product-files,.product-photos,.product-share,.product-desk) .card-links { color:#e0efff; }
-:is(.product-player,.product-files,.product-photos,.product-share,.product-desk) .download-link img[src="assets/macos.svg"] { filter:brightness(0) invert(1); }
+:is(.product-player,.product-files,.product-quickshare,.product-photos,.product-share,.product-desk) .product-title span { color:#d0e1ec; border-color:#496173; background:rgba(8,23,36,.65); }
+:is(.product-player,.product-files,.product-quickshare,.product-photos,.product-share,.product-desk) .product-body > p { color:#e0eaf3; text-shadow:0 1px 3px #081724; }
+:is(.product-player,.product-files,.product-quickshare,.product-photos,.product-share,.product-desk) .tags span { color:#d9edf5; background:rgba(13,35,51,.9); }
+:is(.product-player,.product-files,.product-quickshare,.product-photos,.product-share,.product-desk) .product-number { color:#a9c1d2; }
+:is(.product-player,.product-files,.product-quickshare,.product-photos,.product-share,.product-desk) .card-links { color:#e0efff; }
+:is(.product-player,.product-files,.product-quickshare,.product-photos,.product-share,.product-desk) .download-link img[src="assets/macos.svg"] { filter:brightness(0) invert(1); }
 
 /* Match the background's 350% height and 58% vertical position exactly. */
 .poster-hotspots { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
@@ -113,9 +118,9 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 .poster-hit-area { pointer-events:all; }
 .poster-highlight { opacity:0; pointer-events:none; transition:opacity .2s; }
 .poster-hotspot:hover .poster-highlight { opacity:1; }
-:is(.product-player,.product-files,.product-photos,.product-share,.product-desk) .product-body { position:relative; pointer-events:none; }
+:is(.product-player,.product-files,.product-quickshare,.product-photos,.product-share,.product-desk) .product-body { position:relative; pointer-events:none; }
 /* Only links intercept input; foreground layout boxes must not split the hotspot. */
-:is(.product-player,.product-files,.product-photos,.product-share,.product-desk) .product-body a { pointer-events:auto; }
+:is(.product-player,.product-files,.product-quickshare,.product-photos,.product-share,.product-desk) .product-body a { pointer-events:auto; }
 @media (prefers-reduced-motion:reduce) { .poster-highlight { transition:none; } }
 
 .technology { background:#e7e6e0; }.tech-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:50px; align-items:stretch; }
