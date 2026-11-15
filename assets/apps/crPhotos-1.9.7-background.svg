@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1080" height="780" viewBox="0 1000 1080 780" role="img" aria-labelledby="poster-title poster-desc">
   <title id="poster-title">crPhotos 1.9.7 released</title>
-  <desc id="poster-desc">A crPhotos release poster with the original app icon, a luminous photo gallery representing people grouping, text recognition, camera capture and QuickShare with an Android icon, and nine libcr family app icons.</desc>
+  <desc id="poster-desc">A crPhotos release poster with the original app icon, a luminous photo gallery representing people grouping, text recognition, photo editing and annotation, and QuickShare with an Android icon, and nine libcr family app icons.</desc>
   <defs>
     <linearGradient id="background" x2=".7" y2="1">
       <stop stop-color="#091423"/><stop offset=".55" stop-color="#050c18"/><stop offset="1" stop-color="#080e1b"/>
@@ -304,14 +304,14 @@
   
   <path d="M105 156 A188 188 0 0 1 322 77" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" opacity="0.28" />
 </svg>
-  <g id="chromium-superscript" opacity=".204" aria-label="Chromium">
+  <g id="chromium-superscript" opacity=".288" aria-label="Chromium">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" x="681" y="248" width="80" height="80"><g clip-path="url(#chromium-badge-a)"><path d="M128 191.995c35.346 0 64-28.654 64-64 0-35.347-28.654-64-64-64-35.346 0-64 28.654-64 64 0 35.346 28.654 64 64 64Z" fill="#fff" /><path d="M96.01 183.41a63.681 63.681 0 0 1-23.42-23.43l-.007.004-55.425-96a128.027 128.027 0 0 0 110.841 192.018l55.436-96.018a63.985 63.985 0 0 1-16.465 18.775 64.007 64.007 0 0 1-70.96 4.651Z" fill="#669DF6" /><path d="M191.991 127.984a63.683 63.683 0 0 1-8.581 31.996l.007.004-55.426 96a128.029 128.029 0 0 0 110.872-192H127.991a64 64 0 0 1 64 64Z" fill="#AECBFA" /><path d="M128 180c28.719 0 52-23.281 52-52s-23.281-52-52-52-52 23.281-52 52 23.281 52 52 52Z" fill="#1A73E8" /><path d="M95.99 72.59a63.684 63.684 0 0 1 32.001-8.566v-.008h110.851A128.035 128.035 0 0 0 127.991.026 128.028 128.028 0 0 0 17.13 63.999l55.436 96.018a64.003 64.003 0 0 1 4.65-70.961A64 64 0 0 1 95.991 72.59Z" fill="#1967D2" /></g><defs><clipPath id="chromium-badge-a"><path fill="#fff" d="M0 0h256v256H0z" /></clipPath></defs></svg>
   </g>
   <text x="540" y="778" text-anchor="middle" font-size="132" font-weight="700" letter-spacing="-7">crPhotos</text>
   <text id="release-version" x="540" y="868" text-anchor="middle" font-size="54" letter-spacing="-1"><tspan fill="#7cf4dc">1.9.7</tspan><tspan dx="16" fill="#c8d8e7">released</tspan></text>
   <text x="540" y="938" text-anchor="middle" font-size="27" fill="#94afc4">Rediscover every moment.</text>
 
-  <!-- Photo constellation: people, local OCR, camera capture and QuickShare. -->
+  <!-- Photo constellation: people, local OCR, photo annotation and QuickShare. -->
   <g fill="none" stroke-linejoin="round">
     <path d="M100 1550L540 1320L980 1550L540 1780Z" stroke="#5da5be" stroke-opacity=".12"/>
     <path d="M155 1550L540 1350L925 1550L540 1750Z" stroke="#5da5be" stroke-opacity=".12"/>
@@ -398,11 +398,14 @@
 
   <g transform="translate(102 1530)">
     <rect width="184" height="130" rx="18" fill="url(#card)" stroke="#466f88" stroke-opacity=".5"/>
-    <g fill="none" stroke="#eac576" stroke-width="2.2" stroke-linejoin="round">
-      <path d="M25 37h11l5-11h22l5 11h11v38H25Z"/>
-      <circle cx="52" cy="55" r="12"/><circle cx="72" cy="45" r="2" fill="#eac576" stroke="none"/>
+    <g fill="none" stroke="#eac576" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="25" y="27" width="50" height="48" rx="4"/>
+      <path d="M31 66l12-13 8 7 7-8 11 14Z"/>
+      <circle cx="40" cy="39" r="4"/>
+      <path d="m57 31 5-5 12 12-5 5-15 5Z" fill="#eac576" fill-opacity=".18"/>
+      <path d="m54 48 3-5 12-12"/>
     </g>
-    <text x="23" y="108" class="caption">CAMERA</text>
+    <text x="16" y="108" class="caption" style="font-size:14px;letter-spacing:1px">EDIT + ANNOTATE</text>
   </g>
   <g transform="translate(783 1528)">
     <rect width="195" height="148" rx="18" fill="url(#card)" stroke="#466f88" stroke-opacity=".5"/>
@@ -595,7 +598,7 @@
   </g>
 
   
-  <g stroke-linecap="round" stroke-linejoin="round">
+  <g id="crShare-share-symbol" stroke-linecap="round" stroke-linejoin="round">
     
     <path d="M101 118 L147 92 M101 138 L147 164" fill="none" stroke="#0B57D0" stroke-width="20" opacity="0.25" />
 
