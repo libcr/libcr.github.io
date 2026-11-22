@@ -1,35 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="208"
-     height="128"
-     viewBox="0 0 208 128">
-
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">crMarkdown layered document</title>
+  <desc id="desc">Red, green and gold sheets rise behind a silver page with a blue folded corner and a folded cobalt blue arrow beside the Markdown M.</desc>
   <defs>
-    <linearGradient id="chromeGradient"
-                    x1="0" y1="0"
-                    x2="208" y2="128"
-                    gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#EA4335"/>
-      <stop offset="0.38" stop-color="#FBBC05"/>
-      <stop offset="0.7" stop-color="#34A853"/>
-      <stop offset="1" stop-color="#EA4335"/>
+    <linearGradient id="red" x2=".1" y2="1">
+      <stop stop-color="#ff7468"/><stop offset="1" stop-color="#d73b32"/>
+    </linearGradient>
+    <linearGradient id="green" x2=".1" y2="1">
+      <stop stop-color="#62cd91"/><stop offset="1" stop-color="#249353"/>
+    </linearGradient>
+    <linearGradient id="gold" x2=".1" y2="1">
+      <stop stop-color="#ffda65"/><stop offset="1" stop-color="#efac17"/>
+    </linearGradient>
+    <linearGradient id="paper" x1=".22" y1="0" x2=".78" y2="1">
+      <stop stop-color="#ffffff"/><stop offset=".60" stop-color="#f2f5f9"/><stop offset="1" stop-color="#cbd6e4"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#245bc6"/><stop offset="1" stop-color="#68aaff"/>
+    </linearGradient>
+    <linearGradient id="arrow-body" x1=".2" y1="0" x2=".75" y2="1">
+      <stop stop-color="#639cf4"/>
+      <stop offset=".28" stop-color="#487fe3"/>
+      <stop offset=".55" stop-color="#3365cf"/>
+      <stop offset="1" stop-color="#234698"/>
+    </linearGradient>
+    <linearGradient id="fold-highlight" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#6ba9fd"/>
+      <stop offset=".42" stop-color="#90caff"/>
+      <stop offset="1" stop-color="#518eef"/>
     </linearGradient>
   </defs>
-
-  <!-- Chrome 三色圆角边框 -->
-  <rect x="5"
-        y="5"
-        width="198"
-        height="118"
-        rx="10"
-        fill="none"
-        stroke="url(#chromeGradient)"
-        stroke-width="10"/>
-
-  <!-- 字母 M -->
-  <path fill="#4285F4"
-        d="M26 96V32h18l20 25 20-25h18v64H83V61L64 85 45 61v35z"/>
-
-  <!-- 字母 D -->
-  <path fill="#4285F4"
-        d="M116 32h28c24 0 38 12 38 32s-14 32-38 32h-28zm19 17v30h8c13 0 20-5 20-15s-7-15-20-15z"/>
+  <g stroke-width="3">
+    <rect x="121" y="44" width="263" height="151" rx="25" fill="url(#red)" stroke="#c33e36"/>
+    <rect x="101" y="73" width="303" height="151" rx="26" fill="url(#green)" stroke="#288a59"/>
+    <rect x="81" y="103" width="343" height="151" rx="27" fill="url(#gold)" stroke="#d69b29"/>
+  </g>
+  <path d="M91 134 H356 L450 228 V433 Q450 466 417 466 H93 Q60 466 60 433 V166 Q60 134 91 134Z"
+        fill="url(#paper)" stroke="#9caabd" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M356 134 L450 228 H379 Q356 228 356 205Z" fill="url(#blue)"/>
+  <path d="M122 344 V234 H150 L186 277 L222 234 H250 V344 H219 V284 L186 322 L153 284 V344Z" fill="#1d344d"/>
+  <g>
+    <path d="M302 247 L336 234 V289 L367 276 L319 345 L271 276 L302 289Z" fill="url(#arrow-body)"/>
+    <path d="M302 247 L319 241 V301 L302 289Z" fill="url(#fold-highlight)"/>
+    <path d="M271 276 L319 301 V345Z" fill="url(#fold-highlight)"/>
+    <path d="M319 301 L367 276 L319 345Z" fill="#152f79" opacity=".52"/>
+  </g>
+  <path fill="url(#blue)"
+        d="M128 378 H240 a6 6 0 0 1 0 12 H128 a6 6 0 0 1 0 -12 Z
+           M263 378 H298 a6 6 0 0 1 0 12 H263 a6 6 0 0 1 0 -12 Z"/>
 </svg>
