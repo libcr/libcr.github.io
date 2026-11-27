@@ -71,6 +71,7 @@ h1 sup { display:inline-block; margin-left:.12em; font:700 .24em var(--mono); le
 .product-card a:focus-visible { outline:2px solid var(--blue); outline-offset:5px; }
 .product-number { position:absolute; right:25px; top:25px; font:500 10px var(--mono); color:#92969d; }
 .product-body { min-width:0; display:flex; flex-direction:column; }.product-title { min-width:0; display:flex; align-items:center; flex-wrap:wrap; gap:14px; }
+.product-title a:hover, .product-title a:focus-visible { text-decoration:underline; text-underline-offset:.12em; }
 .product-title h3 { overflow-wrap:anywhere; margin:0; font-size:clamp(25px,2.2vw,34px); letter-spacing:-.05em; }.product-title span { padding:5px 8px; border:0; border-radius:4px; background:#E4EBF2; color:#42566B; font:500 12px var(--mono); letter-spacing:.09em; text-transform:uppercase; }
 .product-featured .product-title span { background:#183044; color:#D8E8F4; }.product-body > p { max-width:620px; color:var(--muted); line-height:1.72; margin:22px 0; }.product-featured .product-body > p { color:#aeb2bb; }
 .tags { display:flex; gap:7px; flex-wrap:wrap; margin-bottom:30px; }.tags span { background:rgba(255,255,255,.75); color:#42566B; border:1px solid rgba(66,86,107,.18); border-radius:6px; -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); padding:7px 10px; font:500 12px var(--mono); }.product-featured .tags span { background:rgba(8,23,36,.75); color:#E0EDF7; border-color:rgba(160,194,218,.25); }
